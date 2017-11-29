@@ -81,24 +81,56 @@
 
     \begin{frame}
         \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Still too much power}
+        \framesubtitle{Encryption}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/encrypt.pdf}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Threshold split-key re-encryption (Umbral)}
+        \frametitle{Centralized KMS using PRE}
+        \framesubtitle{Access delegation}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/delegate.pdf}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Decentralized KMS network}
+        \frametitle{Centralized KMS using PRE}
+        \framesubtitle{Decryption}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/decrypt.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Decentralized key management}
+        \framesubtitle{Using threshold split-key re-encryption (Umbral)}
+        \begin{figure}
+            \centering
+            \includegraphics[height=7cm]{pdf/decrypt-umbral.pdf}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
         \frametitle{KMS token}
+        \framesubtitle{Purpose}
+        \begin{itemize}
+            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work);
+            \item In-network means of payment for deploying policies;
+            \item Proof of Stake for minting new coins according to the mining schedule;
+            \item Security deposit to be at stake against malicious behavior of nodes
+        \end{itemize}
     \end{frame}
 
     \begin{frame}
         \frametitle{KMS token}
         \framesubtitle{Mining}
+        Mining reward:
+        $$\text{reward} = \frac{\text{locked\_tokens} \times \text{reward\_rate}}{\sum_{\text{all miners}} {\text{locked\_tokens}}} + \sum_{\text{this miner}} {\text{miner\_fees}}$$
     \end{frame}
 
     \begin{frame}
