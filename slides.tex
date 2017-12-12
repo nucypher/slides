@@ -1,4 +1,5 @@
 \documentclass[xetex,mathsans,sans]{beamer}
+\usepackage{listings}
 \usetheme{Boadilla}
 \usecolortheme{orchid}
 \usepackage{fontspec}
@@ -134,6 +135,25 @@
         \framesubtitle{Mining}
         Mining reward:
         $$\text{reward} = \frac{\text{locked\_tokens} \times \text{reward\_rate}}{\sum_{\text{all miners}} {\text{locked\_tokens}}} + \sum_{\text{this miner}} {\text{miner\_fees}}$$
+    \end{frame}
+
+    \begin{frame}[fragile]
+        \frametitle{Unexpected bonus use cases}
+
+        Delegate access to Bitcoin funds with proxy re-signature:
+        $$\text{sig}_a = \text{re-sign}(\text{re}_{ba}, \text{sign}(\text{priv}_b, \text{tx})).$$
+
+        Dead man's switch to give access to data or Bitcoin keys:
+
+        \begin{lstlisting}
+
+    if (now - last_transaction) > 100 * days:
+        c_b = reencrypt(re_ab, c_a)
+
+    else:
+        raise LifeError("The man isn't dead yet")
+        \end{lstlisting}
+
     \end{frame}
 
     \begin{frame}
