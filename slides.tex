@@ -9,7 +9,7 @@
 
 \title[NuCypher KMS]{NuCypher KMS: Decentralized Key-Management System}
 \author[MacLane and John]{MacLane Wilkison; John Pacific}
-\date[22 Feb 2018]{Oakland Blockchain Developers, 22 Feb 2018}
+\date[25 Feb 2018]{Silicon Valley Ethereum, 25 Feb 2018}
 
 \begin{document}
     \begin{frame}
@@ -112,32 +112,6 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Umbral: Threshold Proxy Re-Encryption}
-        %\framesubtitle{Purpose}
-        \begin{itemize}
-        	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
-            \item PRE properties: Unidirectional, single-hop, non-interactive
-            \item It follows a KEM/DEM approach:
-            	\begin{itemize}
-					\item UmbralKEM provides the threshold re-encryption capability
-            		\item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
-        		\end{itemize}
-			\item IND-PRE-CCA security
-			\item Verification of re-encryption correctness through Non-Interactive ZK Proofs of Knowledge
-			\item Code: \url{https://github.com/nucypher/pyUmbral/}
-			\item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{PRE demo}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
         \frametitle{KMS token}
         \framesubtitle{Purpose}
         \begin{itemize}
@@ -184,14 +158,6 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{KMS mock code demo}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
         \frametitle{Useful links}
         \begin{figure}
             \centering
@@ -211,5 +177,32 @@
 
         E-mail: \url{john@nucypher.com}
     \end{frame}
+
+    \begin{frame}
+        \frametitle{Umbral: Threshold Proxy Re-Encryption}
+        %\framesubtitle{Purpose}
+        \begin{itemize}
+        	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
+            \item PRE properties: Unidirectional, single-hop, non-interactive
+            \item It follows a KEM/DEM approach:
+            	\begin{itemize}
+					\item UmbralKEM provides the threshold re-encryption capability
+            		\item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
+        		\end{itemize}
+			\item IND-PRE-CCA security
+			\item Verification of re-encryption correctness through Non-Interactive ZK Proofs
+			\item Code: \url{https://github.com/nucypher/pyUmbral/}
+			\item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{PRE demo}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
+        \end{figure}
+    \end{frame}
+
 \end{document}
 
