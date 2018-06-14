@@ -2,13 +2,13 @@
 \usetheme{Boadilla}
 \usecolortheme{orchid}
 \usepackage{fontspec}
-\setsansfont{Basis Grotesque}
+\setsansfont{Basis Grotesque Pro}
 \setbeamertemplate{navigation symbols}{}
 
 
-\title[NuCypher KMS]{NuCypher KMS: Decentralized Key-Management System}
-\author[Michael]{Michael Egorov, CTO}
-\date[29 Nov 2017]{SF Cryptocurrency Devs, 29 Nov 2017}
+\title[NuCypher]{NuCypher: Key-Management System}
+\author[MacLane]{MacLane Wilkison, CEO}
+\date[21 Jun 2018]{Cyber @ Station F, 21 Jun 2018}
 
 \begin{document}
     \begin{frame}
@@ -20,30 +20,14 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Why}
-        \framesubtitle{Encrypted file sharing}
+      \frametitle{Problem}
+      \framesubtitle{Data Breaches}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/file-sharing.pdf}
+            \includegraphics[height=6.5cm]{pdf/data-breaches.pdf}
         \end{figure}
-    \end{frame}
 
-    \begin{frame}
-        \frametitle{Why}
-        \framesubtitle{Encrypted multi-user chats}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/chats.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Why}
-        \framesubtitle{Decentralized Netflix}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/streams.pdf}
-        \end{figure}
+        {\tiny Source: \url{https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/} \par}
     \end{frame}
 
     \begin{frame}
@@ -56,12 +40,18 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Solution}
-        \framesubtitle{Proxy re-encryption + decentralization}
+        \frametitle{Public Key Encryption (PKE)}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/pre-kms.pdf}
+            \includegraphics[width=11cm]{pdf/pke.pdf}
         \end{figure}
+
+        Limitations
+        \begin{itemize}
+            \item Decryption before sharing
+            \item Not scalable
+            \item Complicated access revocation
+        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -73,11 +63,20 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{PRE demo}
+        \frametitle{Solution}
+        \framesubtitle{Proxy Re-encryption + KMS}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
+            \includegraphics[height=5.5cm]{pdf/pre-kms.pdf}
         \end{figure}
+
+        Advantages
+        \begin{itemize}
+            \item No data decryption
+            \item Scalable and performant
+            \item Secure use of data storage providers
+            \item Access revocation through re-encryption key deletion
+        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -108,57 +107,102 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Decentralized key management}
+        \frametitle{Decentralized KMS using PRE}
         \framesubtitle{Using threshold split-key re-encryption (Umbral)}
         \begin{figure}
             \centering
             \includegraphics[height=6.5cm]{pdf/decrypt-umbral.pdf}
         \end{figure}
         \url{https://github.com/nucypher/nucypher-kms/}
-        \url{https://github.com/nucypher/nucypher-pre-python/}
     \end{frame}
 
     \begin{frame}
-        \frametitle{KMS token}
+        \frametitle{Decentralized KMS: Token}
         \framesubtitle{Purpose}
         \begin{itemize}
-            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work);
-            \item In-network means of payment for deploying policies;
-            \item Proof of Stake for minting new coins according to the mining schedule;
+            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work)
+            \item Proof of Stake for minting new coins according to the mining schedule
             \item Security deposit to be at stake against malicious behavior of nodes
         \end{itemize}
     \end{frame}
 
     \begin{frame}
-        \frametitle{KMS token}
-        \framesubtitle{Mining}
-        Mining reward:
-        $$\text{reward} = \frac{\text{locked\_tokens} \times \text{reward\_rate}}{\sum_{\text{all miners}} {\text{locked\_tokens}}} + \sum_{\text{this miner}} {\text{miner\_fees}}$$
+        \frametitle{Use Cases}
+        \framesubtitle{Encrypted file sharing}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/file-sharing.pdf}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Early users}
-        Decentralized marketplaces:
-        \begin{itemize}
-            \item Datum;
-            \item Helios.
-        \end{itemize}
-        Decentralized databases:
-        \begin{itemize}
-            \item Bluzelle;
-            \item Fluence;
-            \item Wolk.
-        \end{itemize}
-        Medical data sharing
-        \begin{itemize}
-            \item Medibloc;
-            \item ZeroPass;
-            \item Wholesome (?).
-        \end{itemize}
+        \frametitle{Use Cases}
+        \framesubtitle{Encrypted multi-user chats}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/chats.pdf}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Investors}
+        \frametitle{Use Cases}
+        \framesubtitle{Decentralized Access-Controlled Content}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/content.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{Early Users}
+      Decentralized databases
+      \begin{itemize}
+          \item Bluzelle
+          \item Fluence
+          \item Wolk
+      \end{itemize}
+      Medical data sharing
+      \begin{itemize}
+          \item Medibloc
+          \item IRYO
+          \item Medixain
+      \end{itemize}
+      Decentralized marketplaces
+      \begin{itemize}
+          \item Datum
+      \end{itemize}
+      Other
+      \begin {itemize}
+          \item Xain [AI]
+          \item Origin [Sharing Economy]
+          \item Spherity [IoT]
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{Competing Technology}
+       Data Masking and Tokenization
+       \begin{itemize}
+           \item Less secure for data with underlying patterns
+           \item Reduce the value of data by obfuscating it
+       \end{itemize}
+      
+       Multi-Party Computation
+       \begin{itemize}
+           \item Very Slow
+       \end{itemize}
+
+       Fully Homomorphic Encryption
+       \begin{itemize}
+           \item Very Slow
+           \begin{itemize}
+               \item Company investments made in this area
+           \end{itemize}
+       \end{itemize}
+     \end{frame}
+    
+    \begin{frame}
+      \frametitle{Investors}
         \begin{figure}
             \centering
             \includegraphics[height=6.5cm]{pdf/investors.pdf}
@@ -166,33 +210,48 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Team}
+      \frametitle{Team}
         Founders
         \begin{figure}
             \centering
-            \includegraphics[width=6cm]{pdf/founders.pdf}
+            \includegraphics[width=5cm]{pdf/founders.pdf}
         \end{figure}
 
         Advisors
         \begin{figure}
             \centering
-            \includegraphics[width=4.5cm]{pdf/advisors.pdf}
+            \includegraphics[width=3.5cm]{pdf/advisors.pdf}
         \end{figure}
+
+        9 employees
     \end{frame}
 
     \begin{frame}
-        \frametitle{How to contribute, learn}
+      \frametitle{Why Thales \& Cyber @ Station F}
+      \begin{itemize}
+          \item Collaboration opportunities for data privacy and compliance
+          \item Potential integration with Thales HSMs
+          %\item Grow NuCypher's Enterprise and Cloud business
+          \item Expand customer base in Europe
+          \item Explore new industry verticals
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{More Information}
         \begin{figure}
             \centering
             \includegraphics[width=5cm]{pdf/nucypher_logo.pdf}
         \end{figure}
-        Website: \url{https://nucypher.com/blockchain.html}
+        Website: \url{https://nucypher.com}
 
-        Github: \url{https://github.com/nucypher/}
+        Whitepaper: \url{https://www.nucypher.com/whitepapers/english.pdf}
 
-        Slack: \url{https://nucypher-kms-slack.herokuapp.com/}
+        Github: \url{https://github.com/nucypher}
 
-        Whitepaper: \url{https://arxiv.org/abs/1707.06140}
+        Discord: \url{https://discord.gg/7rmXa3S}
+
+        Email: \href{mailto:maclane@nucypher.com}{maclane@nucypher.com}
     \end{frame}
 \end{document}
 
