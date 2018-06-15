@@ -31,7 +31,7 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Central server + TLS}
+        \frametitle{Central Server + TLS}
         \framesubtitle{Data vulnerable to hackers, state actors etc}
         \begin{figure}
             \centering
@@ -48,9 +48,9 @@
 
         Limitations
         \begin{itemize}
-            \item Decryption before sharing
+            \item Decryption required before sharing
             \item Not scalable
-            \item Complicated access revocation
+            \item Complex access revocation
         \end{itemize}
     \end{frame}
 
@@ -67,15 +67,15 @@
         \framesubtitle{Proxy Re-encryption + KMS}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/pre-kms.pdf}
+            \includegraphics[height=5cm]{pdf/pre-kms.pdf}
         \end{figure}
 
         Advantages
         \begin{itemize}
-            \item No data decryption
+            \item Data not decrypted to facilitate sharing
             \item Scalable and performant
-            \item Secure use of data storage providers
             \item Access revocation through re-encryption key deletion
+            \item Secure use of data storage providers
         \end{itemize}
     \end{frame}
 
@@ -128,6 +128,15 @@
 
     \begin{frame}
         \frametitle{Use Cases}
+        \framesubtitle{Multi-tenant, Multi-source Shared Data Lake}
+        \begin{figure}
+            \centering
+            \includegraphics[height=7cm]{pdf/data-lake.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Use Cases}
         \framesubtitle{Encrypted file sharing}
         \begin{figure}
             \centering
@@ -140,7 +149,7 @@
         \framesubtitle{Encrypted multi-user chats}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/chats.pdf}
+            \includegraphics[height=5cm]{pdf/chats.pdf}
         \end{figure}
     \end{frame}
 
@@ -155,6 +164,10 @@
 
     \begin{frame}
       \frametitle{Early Users}
+      Decentralized marketplaces
+      \begin{itemize}
+          \item Datum
+      \end{itemize}
       Decentralized databases
       \begin{itemize}
           \item Bluzelle
@@ -167,12 +180,9 @@
           \item IRYO
           \item Medixain
       \end{itemize}
-      Decentralized marketplaces
-      \begin{itemize}
-          \item Datum
-      \end{itemize}
       Other
       \begin {itemize}
+          \item Financial Institution [KYC Shared Data Lake]
           \item Xain [AI]
           \item Origin [Sharing Economy]
           \item Spherity [IoT]
@@ -187,17 +197,17 @@
            \item Reduce the value of data by obfuscating it
        \end{itemize}
       
-       Multi-Party Computation
-       \begin{itemize}
-           \item Very Slow
-       \end{itemize}
-
        Fully Homomorphic Encryption
        \begin{itemize}
-           \item Very Slow
+           \item Slow Peformance
            \begin{itemize}
-               \item Company investments made in this area
+               \item NuCypher has made investments in this area
            \end{itemize}
+       \end{itemize}
+       
+       Multi-Party Computation
+       \begin{itemize}
+           \item Slow Performance
        \end{itemize}
      \end{frame}
     
@@ -230,7 +240,7 @@
       \frametitle{Why Thales \& Cyber @ Station F}
       \begin{itemize}
           \item Collaboration opportunities for data privacy and compliance
-          \item Potential integration with Thales HSMs
+          \item Potential integration with Thales' HSMs
           %\item Grow NuCypher's Enterprise and Cloud business
           \item Expand customer base in Europe
           \item Explore new industry verticals
