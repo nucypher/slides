@@ -11,7 +11,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="pke.svg"
+   sodipodi:docname="pke-hack.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    version="1.1"
    id="svg2"
@@ -29,10 +29,10 @@
      inkscape:window-height="1017"
      inkscape:window-width="1920"
      showgrid="true"
-     inkscape:current-layer="g9592"
+     inkscape:current-layer="g7629"
      inkscape:document-units="px"
-     inkscape:cy="259.648"
-     inkscape:cx="916.77846"
+     inkscape:cy="420.17599"
+     inkscape:cx="684.6356"
      inkscape:zoom="0.7"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -2254,7 +2254,7 @@
     </g>
   </g>
   <g
-     transform="translate(-467.86614,-235.36776)"
+     transform="translate(-467.86614,-186.78199)"
      id="g5522">
     <g
        id="g28-8"
@@ -2582,16 +2582,16 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:27.22606277px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.68065155"
-       x="1017.9561"
+       x="1014.8984"
        y="405.83179"
        id="text6293"><tspan
          sodipodi:role="line"
          id="tspan6291"
-         x="1017.9561"
+         x="1014.8984"
          y="405.83179"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.68065155">Charlie</tspan><tspan
          sodipodi:role="line"
-         x="1017.9561"
+         x="1014.8984"
          y="440.53711"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:'serif Italic';text-align:center;text-anchor:middle;stroke-width:0.68065155"
          id="tspan6349">(sk<tspan
@@ -2602,17 +2602,17 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:27.22606277px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.68065155"
-       x="102.74886"
-       y="371.8891"
+       x="102.74885"
+       y="405.83179"
        id="text6303"><tspan
          sodipodi:role="line"
          id="tspan6301"
-         x="102.74886"
-         y="371.8891"
+         x="102.74885"
+         y="405.83179"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:serif;text-align:center;text-anchor:middle;stroke-width:0.68065155">Alice</tspan><tspan
          sodipodi:role="line"
-         x="102.74886"
-         y="406.59442"
+         x="102.74885"
+         y="440.53711"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:serif;-inkscape-font-specification:'serif Italic';text-align:center;text-anchor:middle;stroke-width:0.68065155"
          id="tspan6337">(sk<tspan
    style="font-size:64.99999762%;text-align:center;baseline-shift:sub;text-anchor:middle"
@@ -2975,7 +2975,7 @@
     <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="g9594"
-       transform="matrix(0.77505418,0,0,-0.77505418,-125.24553,671.91964)"
+       transform="matrix(0.77505418,0,0,-0.77505418,-121.94533,671.91964)"
        xml:space="preserve"
        stroke-miterlimit="10.433"
        font-style="normal"
@@ -3003,10 +3003,11 @@
 
 
 
+
 </g>    <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="g9594-7"
-       transform="matrix(0.77505418,0,0,-0.77505418,422.32142,665.29052)"
+       transform="matrix(0.77505418,0,0,-0.77505418,423.12686,665.29052)"
        xml:space="preserve"
        stroke-miterlimit="10.433"
        font-style="normal"
@@ -3031,6 +3032,7 @@
    id="tspan12395">B</tspan> = encrypt(pk<tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64.99999762%;font-family:serif;-inkscape-font-specification:'serif Italic';baseline-shift:sub"
    id="tspan12397">B</tspan>, m)</tspan></text>
+
 
 
 
@@ -3068,6 +3070,7 @@
 
 
 
+
 </g>    <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="g9594-5"
@@ -3100,23 +3103,13 @@
 
 
 
-</g>    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
-       x="976.11316"
-       y="514.3241"
-       id="text20315"><tspan
-         sodipodi:role="line"
-         id="tspan20313"
-         x="976.11316"
-         y="548.5365"
-         style="stroke-width:0.9375" /></text>
-  </g>
+
+</g>  </g>
   <g
      id="g10486"
      transform="translate(446.98479,-256.42818)" />
   <g
-     transform="translate(635.2006,-198.5677)"
+     transform="translate(630.98909,-198.5677)"
      id="g5510">
     <g
        id="g28-8-6"
