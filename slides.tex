@@ -6,7 +6,7 @@
 \setbeamertemplate{navigation symbols}{}
 
 
-\title[NuCypher]{NuCypher: Key-Management System}
+\title[NuCypher]{NuCypher: Key Management System}
 \author[Derek]{Derek Pierre, Business Development Lead}
 \date[21 Jun 2018]{Cyber @ Station F, 21 Jun 2018}
 
@@ -24,7 +24,7 @@
       \framesubtitle{Data Breaches}
         \begin{figure}
             \centering
-            \includegraphics[height=6.5cm]{pdf/data-breaches.pdf}
+            \includegraphics[height=6cm]{pdf/data-breaches.pdf}
         \end{figure}
 
         {\tiny Source: \url{https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/} \par}
@@ -122,7 +122,7 @@
         \framesubtitle{Multi-tenant, Multi-source Encrypted Data Lake}
         \begin{figure}
             \centering
-            \includegraphics[height=7cm]{pdf/data-lake.pdf}
+            \includegraphics[height=7.5cm]{pdf/data-lake.pdf}
         \end{figure}
     \end{frame}
 
@@ -233,5 +233,24 @@
 
         Email: \href{mailto:derek@nucypher.com}{derek@nucypher.com}
     \end{frame}
+
+    \begin{frame}
+      \frametitle{Appendix: Umbral - Threshold Proxy Re-Encryption}
+      Designed by: David Nu\~{n}ez, University of Malaga, NICS Lab
+      \begin{itemize}
+          \item \emph{``Umbral''} is Spanish for \emph{``threshold''}
+          \item PRE properties: Unidirectional, single-hop, non-interactive
+          \item It follows a KEM/DEM approach:
+          \begin{itemize}
+              \item UmbralKEM provides the threshold re-encryption capability
+              \item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
+          \end{itemize}
+          \item IND-PRE-CCA security
+          \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
+          \item Code: \url{https://github.com/nucypher/pyUmbral/}
+          \item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
+      \end{itemize}
+    \end{frame}
 \end{document}
+
 
