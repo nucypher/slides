@@ -9,9 +9,9 @@
 \usepackage{multicol}
 
 
-\title[NuCypher]{NuCypher: Decentralized Key-Management System}
-\author[Michael]{Michael Egorov}
-\date[10 May 2018]{Swarm Orange Summit, 10 May 2018}
+\title[NuCypher]{NuCypher}
+\author[<fname>]{<fname lname>}
+\date[<dd Month yyyy>]{<event name>, <dd Month yyyy>}
 
 \begin{document}
     \begin{frame}
@@ -114,7 +114,7 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Umbral: Threshold Proxy Re-Encryption}
+        \frametitle{Umbral: threshold proxy re-encryption}
         %\framesubtitle{Purpose}
         \begin{itemize}
         	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
@@ -160,6 +160,8 @@
             T_{i,\text{initial}} &\ge& T_{\min},\\
             \delta s_{i,t} &=&  \kappa\, \frac{l_i}{\sum l_j} \frac{\ln{2}}{T_{1/2}} \left( S_{\max} - S_{t-1}\right).\\
         \end{eqnarray}
+        Results into:
+        $$\text{reward} \propto 2^{\frac{t}{T_{1/2}}}$$
     \end{frame}
 
     \begin{frame}
