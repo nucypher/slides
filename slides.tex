@@ -10,8 +10,8 @@
 
 
 \title[NuCypher]{NuCypher}
-\author[<fname>]{<fname lname>}
-\date[<dd Month yyyy>]{<event name>, <dd Month yyyy>}
+\author[Michael]{Michael Egorov, CTO of NuCypher}
+\date[28 June 2018]{Big blockchain is watching you, 28 June 2018}
 
 \begin{document}
     \begin{frame}
@@ -167,6 +167,14 @@
     \begin{frame}
         \frametitle{NU token}
         \framesubtitle{Graph of daily mining compensation}
+        \begin{equation}
+            \text{reward}_i = \kappa_i \cdot \text{reward}_0,\qquad
+            \kappa^* = \left< \kappa_i \right>,\qquad
+            \lambda = \frac{S_{\text{locked}}}{S};
+        \end{equation}
+        \begin{equation}
+            T_{1/2}^* = T_{1/2} / \kappa^*.
+        \end{equation}
         \begin{figure}
             \centering
             \includegraphics[height=5.5cm]{pdf/daily-compensation.pdf}
@@ -176,6 +184,15 @@
     \begin{frame}
         \frametitle{NU token}
         \framesubtitle{Relocking mining rewards}
+        \small{
+        \begin{equation}
+            \frac{c_{\text{dump}}}{\text{stake}} =
+            \frac{\kappa}{\kappa^* \lambda} \ln \frac{S(t)}{S_0};
+        \end{equation}
+        \begin{equation}
+            \frac{c_{\text{hodl}}}{\text{stake}} =
+            \left[ \frac{S(t)}{S_0} \right] ^ {\frac{\kappa}{\kappa^* \lambda}};
+        \end{equation}}
         \begin{figure}
             \centering
             \includegraphics[height=5.5cm]{pdf/total-compensation.pdf}
