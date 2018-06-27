@@ -10,8 +10,8 @@
 
 
 \title[NuCypher]{NuCypher}
-\author[<fname>]{<fname lname>}
-\date[<dd Month yyyy>]{<event name>, <dd Month yyyy>}
+\author[<fname lname>]{<fname lname>}
+\date[<dd mmm yyyy>]{<event>, <dd mmm yyyy>}
 
 \begin{document}
     \begin{frame}
@@ -122,7 +122,7 @@
             \item It follows a KEM/DEM approach:
             	\begin{itemize}
 					\item UmbralKEM provides the threshold re-encryption capability
-                    \item Encryption is ECIES with extra things for proof of correctness, on curve \emph{secp256k1}
+                    \item Uses ECIES for key encapsulation with zero knowledge proofs of correctness for verifiability on prime order curves (such as secp256k1)
             		\item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
         		\end{itemize}
 			\item IND-PRE-CCA security
@@ -252,9 +252,9 @@
 
         Discord: \url{https://discord.gg/7rmXa3S}
 
-        Whitepaper: \url{https://arxiv.org/abs/1707.06140}
+        Whitepaper: \url{https://www.nucypher.com/whitepapers/english.pdf}
 
-        E-mail: \url{michael@nucypher.com}
+        E-mail: \url{<name>@nucypher.com}
 
         E-mail: \url{hello@nucypher.com}
     \end{frame}
