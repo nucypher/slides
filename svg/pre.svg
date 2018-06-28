@@ -30,8 +30,8 @@
      showgrid="true"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="281.55109"
-     inkscape:cx="773.57299"
+     inkscape:cy="279.53078"
+     inkscape:cx="546.28867"
      inkscape:zoom="0.98994949"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -893,7 +893,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1856,14 +1856,14 @@
        sodipodi:linespacing="125%"
        id="text6360-8"
        y="77.793556"
-       x="353.44678"
+       x="225.44678"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan6400"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;font-family:serif;-inkscape-font-specification:serif"
          y="77.793556"
-         x="353.44678"
-         sodipodi:role="line">Proxy</tspan></text>
+         x="225.44678"
+         sodipodi:role="line">Ursula (Untrusted Proxy)</tspan></text>
   </g>
   <g
      id="g7629"

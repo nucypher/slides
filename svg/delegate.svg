@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="149.05734mm"
-   height="160.22717mm"
-   viewBox="0 0 528.15594 567.73407"
+   width="152.83966mm"
+   height="160.22716mm"
+   viewBox="0 0 541.55786 567.73402"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -28,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="213.93441"
-     inkscape:cy="322.33224"
+     inkscape:cx="108.32526"
+     inkscape:cy="321.32204"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="true"
@@ -41,8 +41,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid4136"
-       originx="-110.53335"
-       originy="-387.29525" />
+       originx="-102.50034"
+       originy="-387.29531" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -94,7 +94,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-110.53335,-97.33289)">
+     transform="translate(-102.50034,-97.332921)">
     <g
        id="g4175"
        transform="matrix(0.49301491,0,0,0.49301491,115.23851,302.80251)">
@@ -290,42 +290,6 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="109.19546"
-       y="400.75565"
-       id="text4338"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4340"
-         x="109.19546"
-         y="400.75565"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif'">Sender</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="567.8299"
-       y="386.80893"
-       id="text4352"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4354"
-         x="567.8299"
-         y="386.80893"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif'">Receiver</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="322.57614"
-       y="192.41296"
-       id="text4356"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4358"
-         x="322.57614"
-         y="192.41296"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif'">Proxy</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="344.7995"
        y="660.75055"
        id="text4360"
@@ -347,7 +311,7 @@
          y="332.36218"
          id="tspan6313" /></text>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker4732)"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4732)"
        d="m 570,332.36221 c -105,35 -385,15 -385,15"
        id="path9782"
        inkscape:connector-curvature="0" />
@@ -383,11 +347,11 @@
        inkscape:connector-curvature="0"
        id="path9928"
        d="m 170,327.36221 c 25,-95 145,-180 145,-180"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker9936);stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker9936)" />
   </g>
   <g
      id="g10251"
-     transform="matrix(0.33951844,-0.40979342,0.40979342,0.33951844,-71.557898,244.16562)"
+     transform="matrix(0.33951844,-0.40979342,0.40979342,0.33951844,-63.524889,244.16559)"
      inkscape:transform-center-x="10.606602"
      inkscape:transform-center-y="-38.38579">
     <g
@@ -487,4 +451,50 @@
          d="m 964.4,418.45 -0.01,0.37 0,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.09,0.92 -0.1,0.94 -0.14,0.98 -0.16,1 -0.2,1.02 -0.23,1.04 -0.27,1.05 -0.3,1.06 -0.35,1.06 -0.39,1.07 -0.22,0.53 -0.22,0.54 -0.24,0.53 -0.25,0.53 c -2.99,6.12 -7.27,9.36 -7.77,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 0.94,-1.15 4.89,-4.92 7.73,-12.85 7.73,-23.26 0,-8.52 -1.85,-17.28 -8.02,-23.56 -0.65,-0.6 -0.65,-0.69 -0.65,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 4.98,3.38 7.92,9.71 2.54,5.48 3.14,11.01 3.14,15.19 z"
          inkscape:connector-curvature="0"
          style="fill:#000000;stroke-width:0" /></g>  </g>
+  <text
+     sodipodi:linespacing="125%"
+     id="text4338-3"
+     y="303.26535"
+     x="33.574219"
+     style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle"
+       y="303.26535"
+       x="33.574219"
+       id="tspan4340-6"
+       sodipodi:role="line">Alice</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle"
+       y="328.26535"
+       x="33.574219"
+       sodipodi:role="line"
+       id="tspan4271">(Sender)</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     id="text4352-7"
+     y="290.93793"
+     x="500.2493"
+     style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle"
+       y="290.93793"
+       x="500.2493"
+       id="tspan4354-5"
+       sodipodi:role="line">Bob</tspan><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle"
+       y="315.93793"
+       x="500.2493"
+       sodipodi:role="line"
+       id="tspan4273">(Receiver)</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     id="text4356-3"
+     y="95.684082"
+     x="192.62224"
+     style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif'"
+       y="95.684082"
+       x="192.62224"
+       id="tspan4358-5"
+       sodipodi:role="line">Ursula (Proxy)</tspan></text>
 </svg>

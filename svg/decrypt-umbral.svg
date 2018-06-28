@@ -28,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="244.78943"
-     inkscape:cy="555.16158"
+     inkscape:cx="84.075144"
+     inkscape:cy="525.16158"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -181,7 +181,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -357,18 +357,6 @@
     </g>
     <text
        sodipodi:linespacing="125%"
-       id="text4352"
-       y="386.80893"
-       x="567.8299"
-       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif'"
-         y="386.80893"
-         x="567.8299"
-         id="tspan4354"
-         sodipodi:role="line">Receiver</tspan></text>
-    <text
-       sodipodi:linespacing="125%"
        id="text4356"
        y="4.5558181"
        x="510.43329"
@@ -378,7 +366,9 @@
          y="4.5558181"
          x="510.43329"
          id="tspan4358"
-         sodipodi:role="line">Proxy 2</tspan></text>
+         sodipodi:role="line">Ursula<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan4406">2</tspan></tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4360"
@@ -743,7 +733,9 @@
          y="206.69867"
          x="310.43329"
          id="tspan4358-0"
-         sodipodi:role="line">Proxy 1</tspan></text>
+         sodipodi:role="line">Ursula<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan4404">1</tspan></tspan></text>
     <g
        transform="matrix(0.49301491,0,0,0.49301491,854.43035,10.19003)"
        id="g4175-3-6-8">
@@ -804,7 +796,9 @@
          y="105.2701"
          x="851.86188"
          id="tspan4358-9"
-         sodipodi:role="line">Proxy 3</tspan></text>
+         sodipodi:role="line">Ursula<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan4408">3</tspan></tspan></text>
     <path
        sodipodi:nodetypes="cc"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11618-8)"
@@ -1077,5 +1071,17 @@
            d="m 1254.4,418.45 0,0.37 0,0.39 0,0.39 0,0.41 -0.1,0.84 0,0.88 -0.1,0.92 -0.1,0.94 -0.2,0.98 -0.1,1 -0.2,1.02 -0.2,1.04 -0.3,1.05 -0.3,1.06 -0.4,1.06 -0.4,1.07 -0.2,0.53 -0.2,0.54 -0.2,0.53 -0.3,0.53 c -3,6.12 -7.3,9.36 -7.8,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 1,-1.15 4.9,-4.92 7.7,-12.85 7.7,-23.26 0,-8.52 -1.8,-17.28 -8,-23.56 -0.7,-0.6 -0.7,-0.69 -0.7,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 5,3.38 8,9.71 2.5,5.48 3.1,11.01 3.1,15.19 z"
            inkscape:connector-curvature="0"
            style="fill:#000000;stroke-width:0" /></g>    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4352-7"
+       y="381.09467"
+       x="602.40814"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;text-anchor:middle"
+         y="381.09467"
+         x="602.40814"
+         sodipodi:role="line"
+         id="tspan4273">Bob</tspan></text>
   </g>
 </svg>
