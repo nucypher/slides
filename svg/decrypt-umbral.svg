@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="179.35254mm"
+   width="475.7471mm"
    height="213.24463mm"
-   viewBox="0 0 635.50112 755.5912"
+   viewBox="0 0 1685.7181 755.5912"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="decrypt-umbral.svg">
+   sodipodi:docname="decrypt-umbral2.svg">
   <sodipodi:namedview
      fit-margin-bottom="0"
      fit-margin-right="0"
@@ -27,20 +27,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="244.78943"
-     inkscape:cy="555.16158"
+     inkscape:zoom="0.7"
+     inkscape:cx="1208.5156"
+     inkscape:cy="383.73304"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="2560"
-     inkscape:window-height="1349"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
      inkscape:window-x="0"
-     inkscape:window-y="46"
+     inkscape:window-y="1"
      inkscape:window-maximized="1">
     <inkscape:grid
-       originy="-387.29526"
-       originx="-280.35026"
+       originy="-387.29525"
+       originx="-280.35027"
        id="grid4136"
        type="xygrid" />
   </sodipodi:namedview>
@@ -172,6 +172,22 @@
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="scale(-0.6,-0.6)" />
     </marker>
+    <clipPath
+       id="clipPath4419"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4421"
+         d="M 0,0 858,0 858,351 0,351 0,0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath4902"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4904"
+         d="M 0,0 858,0 858,351 0,351 0,0 Z" />
+    </clipPath>
   </defs>
   <metadata
      id="metadata7">
@@ -1077,5 +1093,600 @@
            d="m 1254.4,418.45 0,0.37 0,0.39 0,0.39 0,0.41 -0.1,0.84 0,0.88 -0.1,0.92 -0.1,0.94 -0.2,0.98 -0.1,1 -0.2,1.02 -0.2,1.04 -0.3,1.05 -0.3,1.06 -0.4,1.06 -0.4,1.07 -0.2,0.53 -0.2,0.54 -0.2,0.53 -0.3,0.53 c -3,6.12 -7.3,9.36 -7.8,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 1,-1.15 4.9,-4.92 7.7,-12.85 7.7,-23.26 0,-8.52 -1.8,-17.28 -8,-23.56 -0.7,-0.6 -0.7,-0.69 -0.7,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 5,3.38 8,9.71 2.5,5.48 3.1,11.01 3.1,15.19 z"
            inkscape:connector-curvature="0"
            style="fill:#000000;stroke-width:0" /></g>    </g>
+    <g
+       transform="matrix(1.15232,0,0,-1.1523199,977.37788,489.5035)"
+       inkscape:label="DecInfo"
+       id="g4894">
+      <g
+         id="g4896" />
+      <g
+         id="g4898">
+        <g
+           clip-path="url(#clipPath4902)"
+           id="g4900">
+          <path
+             inkscape:connector-curvature="0"
+             id="path4906"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="M 0,0 858,0 858,351 0,351 0,0 Z" />
+        </g>
+      </g>
+      <g
+         id="g4908">
+        <path
+           inkscape:connector-curvature="0"
+           id="path4910"
+           style="fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 857.5,323.8331 0,-58.6662 c 0,-8.1003 -6.5666,-14.6669 -14.6668,-14.6669 l -530.3332,0 0,88 530.3332,0 c 8.1002,0 14.6668,-6.5666 14.6668,-14.6669 z" />
+        <g
+           transform="matrix(0,-7.874016e-5,-7.874016e-5,0,857.5,338.5)"
+           id="g4912">
+          <path
+             inkscape:connector-curvature="0"
+             id="path4914"
+             style="fill:none;stroke:#cfd5ea;stroke-width:12700;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:0.9020004"
+             d="M 186269.2,0 931330.8,0 C 1034204,0 1117600,83395.43 1117600,186268.9 l 0,6735231.1 L 0,6921500 0,186268.9 C 0,83395.43 83395.56,0 186269.2,0 Z" />
+        </g>
+        <g
+           transform="translate(331.3336,-36)"
+           id="g4916">
+          <text
+             id="text4918"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4920"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-36)"
+           id="g4922">
+          <text
+             id="text4924"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4926"
+               sodipodi:role="line"
+               y="0"
+               x="0 14.9996 27.9972 32.986801 46.996399 51.986 59.989601 72.987198 84.994797 92.998398 97.987999 110.9856 123.9832 135.9908">Unidirectional</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(331.3336,-63)"
+           id="g4928">
+          <text
+             id="text4930"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4932"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-63)"
+           id="g4934">
+          <text
+             id="text4936"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4938"
+               sodipodi:role="line"
+               y="0"
+               x="0 14.0008 19.003599 32.0144 45.0252 50.028 63.038799 69.031601 82.042397 95.031197">Single hop</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(331.3336,-90)"
+           id="g4940">
+          <text
+             id="text4942"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4944"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-90)"
+           id="g4946">
+          <text
+             id="text4948"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4950"
+               sodipodi:role="line"
+               y="0"
+               x="0 16.000601 29.009199">Non</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(391.3336,-90)"
+           id="g4952">
+          <text
+             id="text4954"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4956"
+               y="0"
+               x="0">-</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(401.3336,-90)"
+           id="g4958">
+          <text
+             id="text4960"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4962"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.0005999 16.9972 24.989799 37.998402 45.991001 57.987598 69.9842 77.976799 82.977402 93.984001">interactive</tspan>
+          </text>
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           id="path4964"
+           style="fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 5.5,331.1663 c 0,10.1254 8.20828,18.3337 18.33372,18.3337 l 270.33258,0 c 10.1254,0 18.3337,-8.2083 18.3337,-18.3337 l 0,-73.3326 C 312.5,247.7083 304.2917,239.5 294.1663,239.5 l -270.33258,0 C 13.70828,239.5 5.5,247.7083 5.5,257.8337 l 0,73.3326 z" />
+        <g
+           transform="matrix(7.874016e-5,0,0,-7.874016e-5,5.5,349.5)"
+           id="g4966">
+          <path
+             inkscape:connector-curvature="0"
+             id="path4968"
+             style="fill:none;stroke:#ffffff;stroke-width:12700;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+             d="M 0,232838.3 C 0,104245.3 104245.2,0 232838.2,0 L 3666062,0 c 128593,0 232838,104245.3 232838,232838.3 l 0,931323.7 c 0,128593 -104245,232838 -232838,232838 l -3433223.8,0 C 104245.2,1397000 0,1292755 0,1164162 L 0,232838.3 Z" />
+        </g>
+        <g
+           transform="translate(22.09169,-47)"
+           id="g4970">
+          <text
+             id="text4972"
+             style="font-variant:normal;font-weight:500;font-size:39px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4974"
+               sodipodi:role="line"
+               y="0"
+               x="0 27.9981 51.0042 80.991302 100.9944 125.0145 148.0206 170.0127 184.0098 195.00391 221.98801 247.9971 272.01721">NuCypher PRE</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(65.09169,-88)"
+           id="g4976">
+          <text
+             id="text4978"
+             style="font-variant:normal;font-weight:500;font-size:39px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4980"
+               sodipodi:role="line"
+               y="0"
+               x="0 26.001301 39.015598 63.027901 87.040199 109.0245 124.0278 138.01711 147.0144 168.0237">Properties</tspan>
+          </text>
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           id="path4982"
+           style="fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 857.5,207.8331 0,-58.6662 c 0,-8.1003 -6.5666,-14.6669 -14.6668,-14.6669 l -530.3332,0 0,88 530.3332,0 c 8.1002,0 14.6668,-6.5666 14.6668,-14.6669 z" />
+        <g
+           transform="matrix(0,-7.874016e-5,-7.874016e-5,0,857.5,222.5)"
+           id="g4984">
+          <path
+             inkscape:connector-curvature="0"
+             id="path4986"
+             style="fill:none;stroke:#cfd5ea;stroke-width:12700;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:0.9020004"
+             d="M 186269.2,0 931330.8,0 C 1034204,0 1117600,83395.43 1117600,186268.9 l 0,6735231.1 L 0,6921500 0,186268.9 C 0,83395.43 83395.56,0 186269.2,0 Z" />
+        </g>
+        <g
+           transform="translate(331.3336,-152)"
+           id="g4988">
+          <text
+             id="text4990"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4992"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-152)"
+           id="g4994">
+          <text
+             id="text4996"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan4998"
+               sodipodi:role="line"
+               y="0"
+               x="0 14.9996 32.991199 47.000801 55.004398 67.012001 72.001602 78.003197 92.012802 105.0104 124.014 129.0036 135.99519 148.9928 156.9964 163.98801 171.99159 184.9892 192.9928 205.9904 216.98599 229.9836 242.9812 247.97079 261.98041 266.97 274.9736">Umbral KEM for threshold re</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(637.3336,-152)"
+           id="g5000">
+          <text
+             id="text5002"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5004"
+               y="0"
+               x="0">-</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(647.3336,-152)"
+           id="g5006">
+          <text
+             id="text5008"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5010"
+               sodipodi:role="line"
+               y="0"
+               x="0 12.9998 25.999599 38.009399 47.005199 58.002998 71.992798 79.998596 84.990402 97.990196">encryption</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(331.3336,-179)"
+           id="g5012">
+          <text
+             id="text5014"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5016"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-179)"
+           id="g5018">
+          <text
+             id="text5020"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5022"
+               sodipodi:role="line"
+               y="0"
+               x="0 12.001 28.996 34.991001 46.992001 60.994999 68.001999 75.009003 88 95.997002 101.992 111.991 124.982 135.993 141.98801 154.979 167.97 179.97099 191.972 205.97501 216.98599 229.97701 234.98199 246.983 254.98 259.98499 272.97601">ECIES for key encapsulation</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(331.3336,-206)"
+           id="g5024">
+          <text
+             id="text5026"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5028"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-206)"
+           id="g5030">
+          <text
+             id="text5032"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5034"
+               sodipodi:role="line"
+               y="0"
+               x="0 14.9996 27.9972 47.000801 53.002399 65.010002 77.017601 90.015198 96.0168 110.0264 123.024 128.0136 140.02119 153.0188 164.0144 170.01601 185.01559 198.0132 204.0148 212.0184 229.02 242.01759 254.02521 271.02679 284.02441 296.03201 308.03961">DEM can be any AE (ChaCha20</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(673.3336,-206)"
+           id="g5036">
+          <text
+             id="text5038"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5040"
+               y="0"
+               x="0">-</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(683.3336,-206)"
+           id="g5042">
+          <text
+             id="text5044"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5046"
+               sodipodi:role="line"
+               y="0"
+               x="0 14.0008 27.0116 32.0144 43.023201 51.018002 64.028801 80.031601 93.042397">Poly1305)</tspan>
+          </text>
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           id="path5048"
+           style="fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 5.5,215.1663 c 0,10.1254 8.20828,18.3337 18.33372,18.3337 l 270.33258,0 c 10.1254,0 18.3337,-8.2083 18.3337,-18.3337 l 0,-73.3326 C 312.5,131.7083 304.2917,123.5 294.1663,123.5 l -270.33258,0 C 13.70828,123.5 5.5,131.7083 5.5,141.8337 l 0,73.3326 z" />
+        <g
+           transform="matrix(7.874016e-5,0,0,-7.874016e-5,5.5,233.5)"
+           id="g5050">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5052"
+             style="fill:none;stroke:#ffffff;stroke-width:12700;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+             d="M 0,232838.3 C 0,104245.3 104245.2,0 232838.2,0 L 3666062,0 c 128593,0 232838,104245.3 232838,232838.3 l 0,931323.7 c 0,128593 -104245,232838 -232838,232838 l -3433223.8,0 C 104245.2,1397000 0,1292755 0,1164162 L 0,232838.3 Z" />
+        </g>
+        <g
+           transform="translate(67.09174,-163)"
+           id="g5054">
+          <text
+             id="text5056"
+             style="font-variant:normal;font-weight:500;font-size:39px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5058"
+               sodipodi:role="line"
+               y="0"
+               x="0 24.000601 46.987202 80.971802 99.9804 125.97 148.9566 182.94119">KEM/DEM</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(69.09174,-204)"
+           id="g5060">
+          <text
+             id="text5062"
+             style="font-variant:normal;font-weight:500;font-size:39px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5064"
+               sodipodi:role="line"
+               y="0"
+               x="0 26.999701 50.996399 74.993103 87.991798 111.9885 133.9962 156.00391">Approach</tspan>
+          </text>
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           id="path5066"
+           style="fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 857.5,91.83313 0,-58.66626 C 857.5,25.06658 850.9334,18.5 842.8332,18.5 l -530.3332,0 0,88 530.3332,0 c 8.1002,0 14.6668,-6.56658 14.6668,-14.66687 z" />
+        <g
+           transform="matrix(0,-7.874016e-5,-7.874016e-5,0,857.5,106.5)"
+           id="g5068">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5070"
+             style="fill:none;stroke:#cfd5ea;stroke-width:12700;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:0.9020004"
+             d="M 186269.2,0 931330.8,0 C 1034204,0 1117600,83395.43 1117600,186268.9 l 0,6735231.1 L 0,6921500 0,186268.9 C 0,83395.43 83395.56,0 186269.2,0 Z" />
+        </g>
+        <g
+           transform="translate(331.3336,-268)"
+           id="g5072">
+          <text
+             id="text5074"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5076"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-268)"
+           id="g5078">
+          <text
+             id="text5080"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5082"
+               sodipodi:role="line"
+               y="0"
+               x="0 12.9998 25.999599 34.005402 38.9972 45.991001 50.9828 62.992599 75.002403 83.008202 88 100.9998 113.9996 120.0034 128.0092 141.009 149.0148 162.0146 175.0144 188.01421 201.01401 207.01781 220.01759 233.0174">Verification through non</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(595.3336,-268)"
+           id="g5084">
+          <text
+             id="text5086"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5088"
+               y="0"
+               x="0">-</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(605.3336,-268)"
+           id="g5090">
+          <text
+             id="text5092"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5094"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.0005999 16.9972 24.989799 37.998402 45.991001 57.987598 69.9842 77.976799 82.977402 93.984001 106.9926 111.9932 125.0018">interactive ZK</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(743.3336,-268)"
+           id="g5096">
+          <text
+             id="text5098"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5100"
+               y="0"
+               x="0">-</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(753.3336,-268)"
+           id="g5102">
+          <text
+             id="text5104"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5106"
+               sodipodi:role="line"
+               y="0"
+               x="0 14.0008 21.9956 34.984402 47.973202">proof</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(331.3336,-295)"
+           id="g5108">
+          <text
+             id="text5110"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5112"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-295)"
+           id="g5114">
+          <text
+             id="text5116"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5118"
+               sodipodi:role="line"
+               y="0"
+               x="0 5.9994001 18.994801 31.0002 43.995602 56.000999 64.002403 69.011803 80.005203 93.000603 99 104.0094 116.0148 127.0082 140.0036 148.005 153.0144 164.0078 169.0172 181.0226 188.034 204.0434 219.0408 225.04021 236.0336 244.035 256.04041 267.03381 272.04321 285.0386 298.034 304.03339 312.03479 325.03021 335.0336 348.02899">Incentive layer via NU staking token</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(331.3336,-322)"
+           id="g5120">
+          <text
+             id="text5122"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5124"
+               y="0"
+               x="0">•</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(349.3336,-322)"
+           id="g5126">
+          <text
+             id="text5128"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5130"
+               sodipodi:role="line"
+               y="0"
+               x="0 12.9998">Re</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(375.3336,-322)"
+           id="g5132">
+          <text
+             id="text5134"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5136"
+               y="0"
+               x="0">-</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(385.3336,-322)"
+           id="g5138">
+          <text
+             id="text5140"
+             style="font-variant:normal;font-weight:500;font-size:22px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5142-4"
+               sodipodi:role="line"
+               y="0"
+               x="0 12.9998 25.999599 38.009399 47.005199 58.002998 71.992798 79.998596 84.990402 97.990196 110.99 116.9938 127.9916 140.0014 144.99319 149.985 163.97479 175.9846 183.9904 196.9902 210.98 214.9818 228.9716 239.96941 245.97321 257.983 270.98279 282.99261 287.98441 292.9762 305.97601 318.9758 331.97559 344.9754 349.96719 363.957 371.9628 384.96259 392.96841 405.9682 417.978 430.97781">encryption validated by challenge protocol</tspan>
+          </text>
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           id="path5144"
+           style="fill:#3137ab;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="M 5.5,99.16627 C 5.5,109.2917 13.70828,117.5 23.83372,117.5 l 270.33258,0 c 10.1254,0 18.3337,-8.2083 18.3337,-18.33373 l 0,-73.33255 c 0,-10.12544 -8.2083,-18.333722 -18.3337,-18.333722 l -270.33258,0 C 13.70828,7.499998 5.5,15.70828 5.5,25.83372 l 0,73.33255 z" />
+        <g
+           transform="matrix(7.874016e-5,0,0,-7.874016e-5,5.5,117.5)"
+           id="g5146">
+          <path
+             inkscape:connector-curvature="0"
+             id="path5148"
+             style="fill:none;stroke:#ffffff;stroke-width:12700;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+             d="M 0,232838.3 C 0,104245.3 104245.2,0 232838.2,0 L 3666062,0 c 128593,0 232838,104245.3 232838,232838.3 l 0,931323.7 c 0,128593 -104245,232838 -232838,232838 l -3433223.8,0 C 104245.2,1397000 0,1292755 0,1164162 L 0,232838.3 Z" />
+        </g>
+        <g
+           transform="translate(33.08921,-279)"
+           id="g5150">
+          <text
+             id="text5152"
+             style="font-variant:normal;font-weight:500;font-size:39px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5154"
+               sodipodi:role="line"
+               y="0"
+               x="0 22.998301 44.982601 58.971901 67.9692 80.983498 89.980797 111.9651 132.9744 146.9637 155.961 179.9733 202.9716 212.98289 236.99519 250.00951">Verification of</tspan>
+          </text>
+        </g>
+        <g
+           transform="translate(48.08921,-320)"
+           id="g5156">
+          <text
+             id="text5158"
+             style="font-variant:normal;font-weight:500;font-size:39px;font-family:'Basis Grotesque';-inkscape-font-specification:BasisGrotesque-Medium;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             transform="matrix(1,0,0,-1,0,351)">
+            <tspan
+               id="tspan5160"
+               sodipodi:role="line"
+               y="0"
+               x="0 29.000401 53.008801 66.994202 80.004601 102.024 124.0434 138.02879 161.02319 182.02859 201.045">Correctness</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
