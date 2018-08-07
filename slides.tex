@@ -6,17 +6,13 @@
 \setbeamertemplate{navigation symbols}{}
 
 
-\title[NuCypher]{NuCypher}
+\title[NuCypher]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
 \author[<fname>]{<fname lname>, <title>}
-\date[<dd Mon yyyy]{<event>, <dd Mon yyyy>}
+\date[<dd Mon yyyy>]{<event>, <dd Mon yyyy>}
 
 \begin{document}
     \begin{frame}
         \titlepage
-        \begin{figure}
-            \centering
-            \includegraphics[width=5cm]{pdf/nucypher_logo.pdf}
-        \end{figure}
     \end{frame}
 
     \begin{frame}
@@ -28,6 +24,16 @@
         \end{figure}
 
         {\tiny Source: \url{https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/} \par}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{Impact of Data Breaches}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6.5cm]{pdf/impact-of-data-breaches.pdf}
+        \end{figure}
+
+        {\tiny Source: IBM 2018 Cost of a Data Breach Study: Global Overview, \url{https://www.ibm.com/security/data-breach} \par}
     \end{frame}
 
     \begin{frame}
@@ -118,11 +124,28 @@
     \end{frame}
 
     \begin{frame}
+        \frametitle{Blockchain \& Smart Contract Agnostic}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6cm]{pdf/blockchains.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
         \frametitle{Use Cases}
         \framesubtitle{Multi-tenant, Multi-source Encrypted Data Lake}
         \begin{figure}
             \centering
             \includegraphics[height=7.5cm]{pdf/data-lake.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Use Cases}
+        \framesubtitle{Scalable, Secure IOT Updates}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6cm]{pdf/iot-updates.pdf}
         \end{figure}
     \end{frame}
 
@@ -156,7 +179,7 @@
     \begin{frame}
       \frametitle{Early Users}
       \begin{figure}
-           \includegraphics[width=10.5cm]{pdf/projects.pdf}
+           \includegraphics[width=13cm]{pdf/projects.pdf}
       \end{figure}
     \end{frame}
 
@@ -170,14 +193,16 @@
 
        Multi-Party Computation
        \begin{itemize}
+           \item Early Research Stage
            \item Slow Performance
        \end{itemize}
       
        Fully Homomorphic Encryption
        \begin{itemize}
+           \item Early Research Stage
            \item Slow Peformance
            \begin{itemize}
-               \item NuCypher has made investments in this area
+               \item \emph{NuCypher has invested efforts in this area}
            \end{itemize}
        \end{itemize}
        
@@ -196,16 +221,23 @@
         Founders
         \begin{figure}
             \centering
-            \includegraphics[width=5cm]{pdf/founders.pdf}
+            \includegraphics[height=3.5cm]{pdf/founders.pdf}
         \end{figure}
 
         Advisors
         \begin{figure}
             \centering
-            \includegraphics[width=5cm]{pdf/advisors.pdf}
+            \includegraphics[height=2.7cm]{pdf/advisors.pdf}
         \end{figure}
+    \end{frame}
 
-        9 employees
+    \begin{frame}
+      \frametitle{Team}
+      Employees
+      \begin{figure}
+        \centering
+        \includegraphics[height=5cm]{pdf/employees.pdf}
+      \end{figure}
     \end{frame}
 
     \begin{frame}
@@ -222,7 +254,9 @@
 
         Discord: \url{https://discord.gg/7rmXa3S}
 
-        Email: \href{mailto:derek@nucypher.com}{derek@nucypher.com}
+        Email: \href{mailto:<fname>@nucypher.com}{<fname>@nucypher.com}
+
+        Email: \href{mailto:hello@nucypher.com}{hello@nucypher.com}
     \end{frame}
 
     \begin{frame}
@@ -241,6 +275,14 @@
           \item Code: \url{https://github.com/nucypher/pyUmbral/}
           \item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
       \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{Appendix: Fully Homomorphic Encryption}
+      \begin{figure}
+        \centering
+        \includegraphics[height=5cm]{pdf/fhe.pdf}
+      \end{figure}
     \end{frame}
 \end{document}
 
