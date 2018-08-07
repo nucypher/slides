@@ -7,8 +7,8 @@
 
 
 \title[NuCypher]{NuCypher}
-\author[<fname>]{<fname lname>, <title>}
-\date[<dd Mon yyyy]{<event>, <dd Mon yyyy>}
+\author[Michael]{Michael Egorov, CTO}
+\date[10.08.2018]{ETHIndia, Bangalore, 10-12 August 2018}
 
 \begin{document}
     \begin{frame}
@@ -20,55 +20,47 @@
     \end{frame}
 
     \begin{frame}
-      \frametitle{Problem}
-      \framesubtitle{Data Breaches}
+        \frametitle{Why}
+        \framesubtitle{Encrypted file sharing}
         \begin{figure}
             \centering
-            \includegraphics[height=6cm]{pdf/data-breaches.pdf}
+            \includegraphics[height=5.5cm]{pdf/file-sharing.pdf}
         \end{figure}
-
-        {\tiny Source: \url{https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/} \par}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Public Key Encryption (PKE)}
+        \frametitle{Why}
+        \framesubtitle{Encrypted multi-user chats}
         \begin{figure}
             \centering
-            \includegraphics<1>[width=11cm]{pdf/pke-multi.pdf}
-            \includegraphics<2>[width=11cm]{pdf/pke-multi-hack.pdf}
+            \includegraphics[height=5.5cm]{pdf/chats.pdf}
         \end{figure}
+    \end{frame}
 
-        Limitations
-        \begin{itemize}
-            \item Decryption required before sharing
-            \item Not scalable
-            \item Complex access revocation
-        \end{itemize}
+    \begin{frame}
+        \frametitle{Why}
+        \framesubtitle{Decentralized Netflix}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/streams.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Central server + TLS}
+        \framesubtitle{Data vulnerable to hackers, state actors etc}
+        \begin{figure}
+            \centering
+            \includegraphics[width=11cm]{pdf/file-sharing-tls.pdf}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
         \frametitle{What is proxy re-encryption (PRE)}
         \begin{figure}
             \centering
-            \includegraphics[width=11cm]{pdf/pre-multi.pdf}
+            \includegraphics[width=11cm]{pdf/pre.pdf}
         \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Solution}
-        \framesubtitle{Proxy Re-encryption + KMS}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{pdf/pre-kms.pdf}
-        \end{figure}
-
-        Advantages
-        \begin{itemize}
-            \item Data not decrypted to facilitate sharing
-            \item Scalable and performant
-            \item Access revocation through re-encryption key deletion
-            \item Secure use of data storage providers
-        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -99,57 +91,73 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Decentralized KMS using PRE}
+        \frametitle{Decentralized key management}
         \framesubtitle{Using threshold split-key re-encryption (Umbral)}
         \begin{figure}
             \centering
             \includegraphics[height=6.5cm]{pdf/decrypt-umbral.pdf}
         \end{figure}
+        \url{https://github.com/nucypher/nucypher-kms/}
+        \url{https://github.com/nucypher/pyUmbral/}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Decentralized KMS: Token}
+        \frametitle{Umbral: threshold proxy re-encryption}
+        %\framesubtitle{Purpose}
+        \begin{itemize}
+        	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
+            \item PRE properties: Unidirectional, single-hop, non-interactive
+            \item It follows a KEM/DEM approach:
+            	\begin{itemize}
+					\item UmbralKEM provides the threshold re-encryption capability
+                    \item Uses ECIES for key encapsulation with zero knowledge proofs of correctness for verifiability on prime order curves (such as secp256k1)
+            		\item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
+        		\end{itemize}
+			\item IND-PRE-CCA security
+			\item Verification of re-encryption correctness through Non-Interactive ZK Proofs
+			\item Code: \url{https://github.com/nucypher/pyUmbral/}
+			\item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{NU token}
         \framesubtitle{Purpose}
         \begin{itemize}
-            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work)
-            \item Proof of Stake for minting new coins according to the mining schedule
+            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work);
+            \item Proof of Stake for minting new coins according to the mining schedule;
             \item Security deposit to be at stake against malicious behavior of nodes
         \end{itemize}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Use Cases}
-        \framesubtitle{Multi-tenant, Multi-source Encrypted Data Lake}
+        \frametitle{NU token}
+        \framesubtitle{Mining}
+        Mining reward:
+        \begin{eqnarray}
+            \kappa &=& \left(0.5 + 0.5\frac{\min(T_i, T_1)}{T_1}\right)\\
+            T_{i,\text{initial}} &\ge& T_{\min},\\
+            \delta s_{i,t} &=&  \kappa\, \frac{l_i}{\sum l_j} \frac{\ln{2}}{T_{1/2}} \left( S_{\max} - S_{t-1}\right).\\
+        \end{eqnarray}
+        Results into:
+        $$\text{reward} \propto 2^{\frac{t}{T_{1/2}}}$$
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{NU token}
+        \framesubtitle{Graph of daily mining compensation}
         \begin{figure}
             \centering
-            \includegraphics[height=7.5cm]{pdf/data-lake.pdf}
+            \includegraphics[height=5.5cm]{pdf/daily-compensation.pdf}
         \end{figure}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Use Cases}
-        \framesubtitle{Encrypted file sharing}
+        \frametitle{NU token}
+        \framesubtitle{Relocking mining rewards}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/file-sharing.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Use Cases}
-        \framesubtitle{Encrypted multi-user chats}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{pdf/chats.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Use Cases}
-        \framesubtitle{Decentralized Access-Controlled Content}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/content.pdf}
+            \includegraphics[height=5.5cm]{pdf/total-compensation.pdf}
         \end{figure}
     \end{frame}
 
@@ -172,41 +180,16 @@
        \begin{itemize}
            \item Slow Performance
        \end{itemize}
-      
+
        Fully Homomorphic Encryption
        \begin{itemize}
            \item Slow Peformance
            \begin{itemize}
-               \item NuCypher has made investments in this area
+               \item NuCypher has invested some efforts in this area
            \end{itemize}
        \end{itemize}
-       
+
      \end{frame}
-    
-    \begin{frame}
-      \frametitle{Investors}
-        \begin{figure}
-            \centering
-            \includegraphics[height=6.5cm]{pdf/investors.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Team}
-        Founders
-        \begin{figure}
-            \centering
-            \includegraphics[width=5cm]{pdf/founders.pdf}
-        \end{figure}
-
-        Advisors
-        \begin{figure}
-            \centering
-            \includegraphics[width=5cm]{pdf/advisors.pdf}
-        \end{figure}
-
-        9 employees
-    \end{frame}
 
     \begin{frame}
         \frametitle{More Information}
@@ -218,29 +201,13 @@
 
         Whitepaper: \url{https://www.nucypher.com/whitepapers/english.pdf}
 
+        Staking economics: \url{https://blog.nucypher.com/nucypher-staking-economics-a7bb56b20716}
+
         Github: \url{https://github.com/nucypher}
 
         Discord: \url{https://discord.gg/7rmXa3S}
 
-        Email: \href{mailto:derek@nucypher.com}{derek@nucypher.com}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Appendix: Umbral - Threshold Proxy Re-Encryption}
-      Designed by: David Nu\~{n}ez, University of Malaga, NICS Lab
-      \begin{itemize}
-          \item \emph{``Umbral''} is Spanish for \emph{``threshold''}
-          \item PRE properties: Unidirectional, single-hop, non-interactive
-          \item It follows a KEM/DEM approach:
-          \begin{itemize}
-              \item UmbralKEM provides the threshold re-encryption capability
-              \item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
-          \end{itemize}
-          \item IND-PRE-CCA security
-          \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
-          \item Code: \url{https://github.com/nucypher/pyUmbral/}
-          \item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
-      \end{itemize}
+        Email: \href{mailto:michael@nucypher.com}{michael@nucypher.com}
     \end{frame}
 \end{document}
 
