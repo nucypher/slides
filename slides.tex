@@ -9,9 +9,9 @@
 \usepackage{multicol}
 
 
-\title[NuCypher]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
-\author[<fname lname>]{<fname lname>}
-\date[<dd mmm yyyy>]{<event>, <dd mmm yyyy>}
+\title[NuCypher: Unstoppable end-to-end encrypted apps]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
+\author[Michael and Justin]{Michael Egorov and Justin Holmes}
+\date[7 Sep]{ETHBerlin, 7 Sep 2018}
 
 \begin{document}
     \begin{frame}
@@ -116,11 +116,7 @@
             \item On payment (``grant access once paid, continue granting while paying'');
             \item Smart contract (public) method.
         \end{itemize}
-
-        \begin{block}{Open question}
-            Is it possible to ``grant to whoever pays'', without knowing public key, using non-interactive zero-knowledge proofs?
-            (Performance of granting access is not required)
-        \end{block}
+        Ursulas are trusted to apply conditions without decrypting data
     \end{frame}
 
     \begin{frame}
@@ -143,23 +139,6 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Security Audits}
-        \begin{figure}
-            \centering
-            \includegraphics[height=2.5cm]{pdf/security-audits.pdf}
-      \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{PRE demo}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
-        \end{figure}
-        Demo network: \url{https://github.com/nucypher/mock-net/}
-    \end{frame}
-
-    \begin{frame}
         \frametitle{NU token}
         \framesubtitle{Purpose}
         \begin{itemize}
@@ -167,37 +146,6 @@
             \item Proof of Stake for minting new coins according to the mining schedule;
             \item Security deposit to be at stake against malicious behavior of nodes
         \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{NU token}
-        \framesubtitle{Mining}
-        Mining reward:
-        \begin{eqnarray}
-            \kappa &=& \left(0.5 + 0.5\frac{\min(T_i, T_1)}{T_1}\right)\\
-            T_{i,\text{initial}} &\ge& T_{\min},\\
-            \delta s_{i,t} &=&  \kappa\, \frac{l_i}{\sum l_j} \frac{\ln{2}}{T_{1/2}} \left( S_{\max} - S_{t-1}\right).\\
-        \end{eqnarray}
-        Results into:
-        $$\text{reward} \propto 2^{\frac{t}{T_{1/2}}}$$
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{NU token}
-        \framesubtitle{Graph of daily mining compensation}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/daily-compensation.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{NU token}
-        \framesubtitle{Relocking mining rewards}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/total-compensation.pdf}
-        \end{figure}
     \end{frame}
 
     \begin{frame}
@@ -215,7 +163,7 @@
         \end{figure}
         Website: \url{https://nucypher.com}
 
-        Github: \url{https://github.com/nucypher/}
+        NuCypher network: \url{https://github.com/nucypher/nucypher/}
 
         PyUmbral: \url{https://github.com/nucypher/pyUmbral/}
 
@@ -227,9 +175,16 @@
 
         Whitepaper: \url{https://www.nucypher.com/whitepapers/english.pdf}
 
-        E-mail: \url{<name>@nucypher.com}
-
         E-mail: \url{hello@nucypher.com}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{PRE demo}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
+        \end{figure}
+        Network you can run: \url{https://github.com/nucypher/nucypher/}
     \end{frame}
 
 \end{document}
