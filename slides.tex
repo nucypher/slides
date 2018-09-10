@@ -9,9 +9,9 @@
 \usepackage{multicol}
 
 
-\title[NuCypher: Unstoppable end-to-end encrypted apps]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
-\author[Michael and Justin]{Michael Egorov and Justin Holmes}
-\date[7 Sep]{ETHBerlin, 7 Sep 2018}
+\title[Building end-to-end encrypted decentralized applications with nucypher]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
+\author[Michael and John]{Michael Egorov and John Pacific}
+\date[10 Sep]{ETHBerlin, 10 Sep 2018}
 
 \begin{document}
     \begin{frame}
@@ -19,11 +19,11 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Why}
-        \framesubtitle{Encrypted file sharing}
+        \frametitle{Central server + TLS}
+        \framesubtitle{Data vulnerable to hackers, state actors etc}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/file-sharing.pdf}
+            \includegraphics[width=11cm]{pdf/file-sharing-tls.pdf}
         \end{figure}
     \end{frame}
 
@@ -37,33 +37,6 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Why}
-        \framesubtitle{Decentralized Netflix}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/streams.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Central server + TLS}
-        \framesubtitle{Data vulnerable to hackers, state actors etc}
-        \begin{figure}
-            \centering
-            \includegraphics[width=11cm]{pdf/file-sharing-tls.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Solution}
-        \framesubtitle{Proxy re-encryption + decentralization}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/pre-kms.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
         \frametitle{What is proxy re-encryption (PRE)}
         \begin{figure}
             \centering
@@ -72,25 +45,7 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Encryption}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/encrypt.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Access delegation}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/delegate.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Centralized KMS using PRE}
+        \frametitle{Key management using PRE}
         \framesubtitle{Decryption}
         \begin{figure}
             \centering
@@ -109,15 +64,6 @@
         \url{https://github.com/nucypher/pyUmbral/}
     \end{frame}
 
-    \begin{frame}
-        \frametitle{Types of policies}
-        \begin{itemize}
-            \item Time-based;
-            \item On payment (``grant access once paid, continue granting while paying'');
-            \item Smart contract (public) method.
-        \end{itemize}
-        Ursulas are trusted to apply conditions without decrypting data
-    \end{frame}
 
     \begin{frame}
         \frametitle{Umbral: threshold proxy re-encryption}
@@ -170,6 +116,19 @@
     \end{frame}
 
     \begin{frame}
+        \frametitle{Activities + done}
+        \begin{itemize}
+            \item Threshold m-of-n proxy re-encryption Umbral: done;
+            \item Staking smart contracts: done;
+            \item On-chain smart contract verification: done;
+            \item On-chain enforcement of correctness: to do;
+            \item NuCypher network: federated done, decentralized on the way;
+            \item On-chain conditions for NuCypher network: to do after testnet;
+            \item Research on FHE.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
         \frametitle{Useful links}
         \begin{figure}
             \centering
@@ -183,7 +142,7 @@
 
         GoUmbral: \url{https://github.com/nucypher/goUmbral/}
 
-        Mocknet: \url{https://github.com/nucypher/mock-net/}
+        FHE: \url{https://github.com/nucypher/nufhe/}
 
         Discord: \url{https://discord.gg/7rmXa3S}
 
@@ -193,12 +152,12 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{PRE demo}
+        \frametitle{FHE demo: homomorphic smart contracts assembly}
         \begin{figure}
             \centering
             \includegraphics[height=5.5cm]{pdf/terminal.pdf}
         \end{figure}
-        Network you can run: \url{https://github.com/nucypher/nucypher/}
+        \url{https://github.com/nucypher/Sputnik/}
     \end{frame}
 
 \end{document}
