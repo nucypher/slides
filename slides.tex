@@ -3,15 +3,15 @@
 \usetheme{Boadilla}
 \usecolortheme{orchid}
 \usepackage{fontspec}
-\setsansfont{Basis Grotesque}
+%\setsansfont{Basis Grotesque}
 \setbeamertemplate{navigation symbols}{}
 \usepackage{amsmath}
 \usepackage{multicol}
 
 
 \title[NuCypher]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
-\author[<fname lname>]{<fname lname>}
-\date[<dd mmm yyyy>]{<event>, <dd mmm yyyy>}
+\author[David Nu\~nez]{David Nu\~nez}
+\date[October 3\textsuperscript{rd}, 2018]{CANS 2018 -- Naples, Italy}
 
 \begin{document}
     \begin{frame}
@@ -67,61 +67,104 @@
         \frametitle{What is proxy re-encryption (PRE)}
         \begin{figure}
             \centering
+            \includegraphics[width=13cm]{pdf/pre.pdf}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}
+        \frametitle{PRE and multiple receivers}
+        \begin{figure}
+            \centering
             \includegraphics[width=13cm]{pdf/pre-multi.pdf}
         \end{figure}
     \end{frame}
 
-    \begin{frame}
-        \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Encryption}
+
+%    \begin{frame}
+%        \frametitle{Centralized KMS using PRE}
+%        \framesubtitle{Encryption}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=7cm]{pdf/encrypt.pdf}
+%        \end{figure}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \frametitle{Centralized KMS using PRE}
+%        \framesubtitle{Access delegation}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=7cm]{pdf/delegate.pdf}
+%        \end{figure}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \frametitle{Centralized KMS using PRE}
+%        \framesubtitle{Decryption}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=7cm]{pdf/decrypt.pdf}
+%        \end{figure}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \frametitle{Decentralized key management}
+%        \framesubtitle{Using threshold split-key re-encryption (Umbral)}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=6.5cm]{pdf/decrypt-umbral.pdf}
+%        \end{figure}
+%        \tiny{\url{https://github.com/nucypher/nucypher-kms/}} \\
+%        \tiny{\url{https://github.com/nucypher/pyUmbral/}}
+%    \end{frame}
+%
+
+ \begin{frame}
+        \frametitle{Sharing in permissioned network}
         \begin{figure}
             \centering
-            \includegraphics[height=7cm]{pdf/encrypt.pdf}
+            \includegraphics[height=5.5cm]{pdf/permissioned.pdf}
         \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Access delegation}
-        \begin{figure}
-            \centering
-            \includegraphics[height=7cm]{pdf/delegate.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Centralized KMS using PRE}
-        \framesubtitle{Decryption}
-        \begin{figure}
-            \centering
-            \includegraphics[height=7cm]{pdf/decrypt.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Decentralized key management}
-        \framesubtitle{Using threshold split-key re-encryption (Umbral)}
-        \begin{figure}
-            \centering
-            \includegraphics[height=6.5cm]{pdf/decrypt-umbral.pdf}
-        \end{figure}
-        \tiny{\url{https://github.com/nucypher/nucypher-kms/}} \\
-        \tiny{\url{https://github.com/nucypher/pyUmbral/}}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Types of policies}
         \begin{itemize}
-            \item Time-based;
-            \item On payment (``grant access once paid, continue granting while paying'');
-            \item Smart contract (public) method.
+            \item Node sees everything;
+            \item Node can deny to work.
         \end{itemize}
-
-        \begin{block}{Open question}
-            Is it possible to ``grant to whoever pays'', without knowing public key, using non-interactive zero-knowledge proofs?
-            (Performance of granting access is not required)
-        \end{block}
     \end{frame}
+
+    \begin{frame}
+        \frametitle{Permissioned network + SSS}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/permissioned-sss.pdf}
+        \end{figure}
+        \begin{itemize}
+            \item Nodes can collude to see everything.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Sharing with PRE}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/prenodes.pdf}
+        \end{figure}
+        \begin{itemize}
+            \item Collusion with receiver possible,
+            \item Node can deny to work.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Sharing with threshold PRE}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/umbralnodes.pdf}
+        \end{figure}
+        \begin{itemize}
+            \item Collusion with receiver: $m$ nodes + receiver.
+        \end{itemize}
+    \end{frame}
+
 
     \begin{frame}
         \frametitle{Umbral: threshold proxy re-encryption}
@@ -141,63 +184,63 @@
         \end{itemize}
     \end{frame}
 
-    \begin{frame}
-        \frametitle{Security Audits}
-        \begin{figure}
-            \centering
-            \includegraphics[height=2.5cm]{pdf/security-audits.pdf}
-      \end{figure}
-    \end{frame}
+%    \begin{frame}
+%        \frametitle{Security Audits}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=2.5cm]{pdf/security-audits.pdf}
+%      \end{figure}
+%    \end{frame}
 
-    \begin{frame}
-        \frametitle{PRE demo}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
-        \end{figure}
-        Demo network: \url{https://github.com/nucypher/mock-net/}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{NU token}
-        \framesubtitle{Purpose}
-        \begin{itemize}
-            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work);
-            \item Proof of Stake for minting new coins according to the mining schedule;
-            \item Security deposit to be at stake against malicious behavior of nodes
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{NU token}
-        \framesubtitle{Mining}
-        Mining reward:
-        \begin{eqnarray}
-            \kappa &=& \left(0.5 + 0.5\frac{\min(T_i, T_1)}{T_1}\right)\\
-            T_{i,\text{initial}} &\ge& T_{\min},\\
-            \delta s_{i,t} &=&  \kappa\, \frac{l_i}{\sum l_j} \frac{\ln{2}}{T_{1/2}} \left( S_{\max} - S_{t-1}\right).\\
-        \end{eqnarray}
-        Results into:
-        $$\text{reward} \propto 2^{\frac{t}{T_{1/2}}}$$
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{NU token}
-        \framesubtitle{Graph of daily mining compensation}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/daily-compensation.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{NU token}
-        \framesubtitle{Relocking mining rewards}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/total-compensation.pdf}
-        \end{figure}
-    \end{frame}
+%    \begin{frame}
+%        \frametitle{PRE demo}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
+%        \end{figure}
+%        Demo network: \url{https://github.com/nucypher/mock-net/}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \frametitle{NU token}
+%        \framesubtitle{Purpose}
+%        \begin{itemize}
+%            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work);
+%            \item Proof of Stake for minting new coins according to the mining schedule;
+%            \item Security deposit to be at stake against malicious behavior of nodes
+%        \end{itemize}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \frametitle{NU token}
+%        \framesubtitle{Mining}
+%        Mining reward:
+%        \begin{eqnarray}
+%            \kappa &=& \left(0.5 + 0.5\frac{\min(T_i, T_1)}{T_1}\right)\\
+%            T_{i,\text{initial}} &\ge& T_{\min},\\
+%            \delta s_{i,t} &=&  \kappa\, \frac{l_i}{\sum l_j} \frac{\ln{2}}{T_{1/2}} \left( S_{\max} - S_{t-1}\right).\\
+%        \end{eqnarray}
+%        Results into:
+%        $$\text{reward} \propto 2^{\frac{t}{T_{1/2}}}$$
+%    \end{frame}
+%
+%    \begin{frame}
+%        \frametitle{NU token}
+%        \framesubtitle{Graph of daily mining compensation}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=5.5cm]{pdf/daily-compensation.pdf}
+%        \end{figure}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \frametitle{NU token}
+%        \framesubtitle{Relocking mining rewards}
+%        \begin{figure}
+%            \centering
+%            \includegraphics[height=5.5cm]{pdf/total-compensation.pdf}
+%        \end{figure}
+%    \end{frame}
 
     \begin{frame}
       \frametitle{Early Users}
@@ -240,7 +283,7 @@
 
         Whitepaper: \url{https://www.nucypher.com/whitepapers/english.pdf}
 
-        E-mail: \url{<name>@nucypher.com}
+        E-mail: \url{david@nucypher.com}
 
         E-mail: \url{hello@nucypher.com}
     \end{frame}
