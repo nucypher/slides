@@ -19,48 +19,19 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Why}
-        \framesubtitle{Encrypted file sharing}
+        \frametitle{Public Key Encryption (PKE)}
         \begin{figure}
             \centering
-            \includegraphics[height=6cm]{pdf/file-sharing.pdf}
+            \includegraphics<1>[width=11cm]{pdf/pke-multi.pdf}
+            \includegraphics<2>[width=11cm]{pdf/pke-multi-hack.pdf}
         \end{figure}
-    \end{frame}
 
-    \begin{frame}
-        \frametitle{Why}
-        \framesubtitle{Encrypted multi-user chats}
-        \begin{figure}
-            \centering
-            \includegraphics[height=6cm]{pdf/chats.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Why}
-        \framesubtitle{Decentralized Netflix}
-        \begin{figure}
-            \centering
-            \includegraphics[height=6cm]{pdf/streams.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Central server + TLS}
-        \framesubtitle{Data vulnerable to hackers, state actors etc}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5cm]{pdf/file-sharing-tls.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Solution}
-        \framesubtitle{Proxy re-encryption + decentralization}
-        \begin{figure}
-            \centering
-            \includegraphics[height=6.5cm]{pdf/pre-kms.pdf}
-        \end{figure}
+        Limitations
+        \begin{itemize}
+            \item Decryption required before sharing
+            \item Not scalable
+            \item Complex access revocation
+        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -68,6 +39,15 @@
         \begin{figure}
             \centering
             \includegraphics[width=13cm]{pdf/pre-multi.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Solution}
+        \framesubtitle{Proxy re-encryption + Key Management}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6.5cm]{pdf/pre-kms.pdf}
         \end{figure}
     \end{frame}
 
@@ -99,28 +79,12 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Decentralized key management}
+        \frametitle{Decentralized Key Management}
         \framesubtitle{Using threshold split-key re-encryption (Umbral)}
         \begin{figure}
             \centering
             \includegraphics[height=6.5cm]{pdf/decrypt-umbral.pdf}
         \end{figure}
-        \tiny{\url{https://github.com/nucypher/nucypher-kms/}} \\
-        \tiny{\url{https://github.com/nucypher/pyUmbral/}}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Types of policies}
-        \begin{itemize}
-            \item Time-based;
-            \item On payment (``grant access once paid, continue granting while paying'');
-            \item Smart contract (public) method.
-        \end{itemize}
-
-        \begin{block}{Open question}
-            Is it possible to ``grant to whoever pays'', without knowing public key, using non-interactive zero-knowledge proofs?
-            (Performance of granting access is not required)
-        \end{block}
     \end{frame}
 
     \begin{frame}
@@ -130,23 +94,24 @@
             \item PRE properties: Unidirectional, single-hop, non-interactive
             \item It follows a KEM/DEM approach:
             	\begin{itemize}
-					\item UmbralKEM provides the threshold re-encryption capability
+		    \item UmbralKEM provides the threshold re-encryption capability
                     \item Uses ECIES for key encapsulation with zero knowledge proofs of correctness for verifiability on prime order curves (such as secp256k1)
-            		\item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
-        		\end{itemize}
-			\item IND-PRE-CCA security
-			\item Verification of re-encryption correctness through Non-Interactive ZK Proofs
-			\item Reference implementation: \url{https://github.com/nucypher/pyUmbral/}
-			\item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
+            	    \item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
+        	\end{itemize}
+	    \item IND-PRE-CCA security
+	    \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
+            \item Reference implementation: \url{https://github.com/nucypher/pyUmbral/}
+	    \item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
         \end{itemize}
     \end{frame}
 
     \begin{frame}
-        \frametitle{Security Audits}
-        \begin{figure}
-            \centering
-            \includegraphics[height=2.5cm]{pdf/security-audits.pdf}
-      \end{figure}
+        \frametitle{Types of policies}
+        \begin{itemize}
+            \item Time-based;
+            \item On payment (``grant access once paid, continue granting while paying'');
+            \item Smart contract (public) method.
+        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -200,10 +165,45 @@
     \end{frame}
 
     \begin{frame}
+        \frametitle{Security Audits}
+        \begin{figure}
+            \centering
+            \includegraphics[height=2.5cm]{pdf/security-audits.pdf}
+      \end{figure}
+    \end{frame}
+
+    \begin{frame}
       \frametitle{Early Users}
       \begin{figure}
            \includegraphics[width=11.5cm]{pdf/projects.pdf}
       \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Use Cases}
+        \framesubtitle{Encrypted file sharing}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6cm]{pdf/file-sharing.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Use Cases}
+        \framesubtitle{Encrypted multi-user chats}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6cm]{pdf/chats.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Use Cases}
+        \framesubtitle{Decentralized Netflix}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6cm]{pdf/streams.pdf}
+        \end{figure}
     \end{frame}
 
     \begin{frame}
@@ -221,7 +221,7 @@
      \end{frame}
 
     \begin{frame}
-        \frametitle{Useful links}
+        \frametitle{More Information}
         \begin{figure}
             \centering
             \includegraphics[width=3cm]{pdf/nucypher_logo.pdf}
