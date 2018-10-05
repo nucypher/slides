@@ -21,6 +21,9 @@ Example:
 make PRES_INFO="MacLane Wilkison, CEO \& Co-Founder" PRES_FOOT="MacLane" EMAIL="maclane" EVENT_DATE="05 Oct 2018" EVENT="ETH SF"
 ```
 
+**NOTE: Special characters should be escaped.**
+
+
 ### Generate templated slides for non-event specific branch
 
 Run a templated build for non-event specific slide updates (eg. on master or enterprise branches):
