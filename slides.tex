@@ -25,13 +25,6 @@
             \includegraphics<1>[width=11cm]{pdf/pke-multi.pdf}
             \includegraphics<2>[width=11cm]{pdf/pke-multi-hack.pdf}
         \end{figure}
-
-        Limitations
-        \begin{itemize}
-            \item Decryption required before sharing
-            \item Not scalable
-            \item Complex access revocation
-        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -152,6 +145,16 @@
         \end{itemize}
     \end{frame}
 
+    \begin{frame}
+        \frametitle{NU Token}
+        \framesubtitle{Purpose}
+        \begin{itemize}
+            \item Splitting trust across re-encryption nodes: more tokens = more trust and more work
+            \item Proof of Stake for minting new coins according to the mining schedule
+            \item Security deposit at stake against malicious behavior of nodes
+        \end{itemize}
+    \end{frame}
+
    \begin{frame}
         \frametitle{Data Sharing Policies}
         \begin{itemize}
@@ -162,17 +165,7 @@
             \end{itemize}
             \item Smart contract (public) method
         \end{itemize}
-        Decentralized proxies (Ursulas) are trusted to apply conditions without decrypting data
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{NU Token}
-        \framesubtitle{Purpose}
-        \begin{itemize}
-            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work)
-            \item Proof of Stake for minting new coins according to the mining schedule
-            \item Security deposit to be at stake against malicious behavior of nodes
-        \end{itemize}
+        Decentralized re-encryption nodes (Ursulas) are trusted to apply conditions without decrypting data
     \end{frame}
 
     \begin{frame}
@@ -223,6 +216,12 @@
        \begin{itemize}
            \item Less secure for data with underlying patterns
            \item Reduce the value of data by obfuscating it
+       \end{itemize}
+
+       Public Key Encryption
+       \begin{itemize}
+           \item Data must be decrypted before it is shared
+           \item Not Scalable
        \end{itemize}
 
        Multi-Party Computation
