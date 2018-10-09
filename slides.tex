@@ -85,17 +85,17 @@
         \begin{itemize}
         	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
             \item PRE properties: Unidirectional, single-hop, non-interactive
-            \item It follows a KEM/DEM approach:
+            \item Follows a KEM/DEM approach:
             	\begin{itemize}
 		    \item UmbralKEM provides the threshold re-encryption capability
-                    \item Uses ECIES for key encapsulation with zero knowledge proofs of correctness for verifiability on prime order curves (such as secp256k1)
-            	    \item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
+                    \item Uses ECIES for key encapsulation with ZK proofs of correctness for verifiability on prime order curves (such as secp256k1)
+            	    \item DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
         	\end{itemize}
 	    \item IND-PRE-CCA security
             \item Key splitting is analogous to Shamir Secret Sharing
 	    \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
-            \item Reference implementation: \url{https://github.com/nucypher/pyUmbral/}
-	    \item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
+            \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
+	    \item Documentation: \url{https://github.com/nucypher/umbral-doc}
         \end{itemize}
     \end{frame}
 
@@ -130,7 +130,7 @@
         \end{figure}
         \begin{itemize}
             \item Single node collusion with receiver possible
-            \item Single node can deny to do work.
+            \item Single node can deny to do work
         \end{itemize}
     \end{frame}
 
@@ -149,7 +149,10 @@
         \frametitle{NU Token}
         \framesubtitle{Purpose}
         \begin{itemize}
-            \item Splitting trust across re-encryption nodes: more tokens = more trust and more work
+            \item Splitting trust across re-encryption nodes 
+            \begin{itemize}
+              \item More tokens = more trust, more work, and more compensation
+            \end{itemize}
             \item Proof of Stake for minting new coins according to the mining schedule
             \item Security deposit at stake against malicious behavior of nodes
         \end{itemize}
@@ -161,11 +164,11 @@
             \item Time-based
             \item Conditional on payment 
             \begin{itemize}
-              \item ``grant access once paid, continue granting while paying''
+              \item ``Grant access once paid, continue granting while paying''
             \end{itemize}
             \item Smart contract (public) method
         \end{itemize}
-        Decentralized re-encryption nodes (Ursulas) are trusted to apply conditions without decrypting data
+        Decentralized re-encryption nodes (Ursulas) relied on to apply conditions without having the ability to decrypt data
     \end{frame}
 
     \begin{frame}
@@ -196,7 +199,7 @@
 
     \begin{frame}
         \frametitle{Use Cases}
-        \framesubtitle{Decentralized Access-Controlled Content}
+        \framesubtitle{Decentralized access-controlled content}
         \begin{figure}
             \centering
             \includegraphics[height=7cm]{pdf/streams-alternative.pdf}
@@ -234,14 +237,14 @@
        \begin{itemize}
            \item Slow Peformance
            \begin{itemize}
-               \item NuCypher is investing efforts in this area
+               \item NuCypher has developed a GPU-accelerated FHE library: nuFHE
            \end{itemize}
        \end{itemize}
      \end{frame}
 
     \begin{frame}
       \frametitle{Fully Homomorphic Encryption}
-       \framesubtitle{nuFHE Library}
+       \framesubtitle{nuFHE library}
        \begin{itemize}
            \item GitHub: \url{https://github.com/nucypher/nufhe}
            \item GPU implementation of fully homomorphic encryption
@@ -254,24 +257,37 @@
      \end{frame}
 
     \begin{frame}
+      \frametitle{FHE Proof of Concept}
+      \framesubtitle{Sputnik}
+      \begin{itemize}
+        \item GitHub: \url{https://github.com/nucypher/sputnik}
+        \item Assembly language and interpreter for FHE that uses nuFHE
+        \item Commits a merkle root of computation to the blockchain for proof of logic flow
+        \item Used to execute first homomorphic smart contract at ETHBerlin 2018
+      \end{itemize}
+      \begin{figure}
+        \centering
+        \includegraphics[width=8cm]{pdf/sputnik-tweet.pdf}
+      \end{figure}
+    \end{frame}
+
+    \begin{frame}
         \frametitle{More Information}
         \begin{figure}
             \centering
             \includegraphics[width=3cm]{pdf/nucypher_logo.pdf}
         \end{figure}
-        Website: \url{https://nucypher.com}
-
-        Github: \url{https://github.com/nucypher/}
-
-        PyUmbral: \url{https://github.com/nucypher/pyUmbral/}
-
-        GoUmbral: \url{https://github.com/nucypher/goUmbral/}
-
-        Mocknet: \url{https://github.com/nucypher/mock-net/}
-
-        Discord: \url{https://discord.gg/7rmXa3S}
+        Website: \url{https://www.nucypher.com}
 
         Whitepaper: \url{https://www.nucypher.com/whitepapers/english.pdf}
+
+        Umbral Documentation: \url{https://github.com/nucypher/umbral-doc}
+
+        Umbral Reference Implementation: \url{https://github.com/nucypher/pyUmbral}
+
+        nuFHE: \url{https://github.com/nucypher/nufhe}
+
+        Discord: \url{https://discord.gg/7rmXa3S}
 
         E-mail: \href{mailto:\emailname @nucypher.com}{\emailname @nucypher.com}
 
@@ -285,7 +301,7 @@
         \includegraphics[width=11cm]{pdf/umbral-kem-flow.pdf}
       \end{figure}
       \begin{itemize}
-           \item Reference implementation: \url{https://github.com/nucypher/pyUmbral/}
+           \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
            \item Documentation: \url{https://github.com/nucypher/umbral-doc}
       \end{itemize}
     \end{frame}
@@ -301,12 +317,16 @@
     \begin{frame}
         \frametitle{Appendix: NU Token Metrics}
         \framesubtitle{Mining}
+        Mining \& Staking Economics: \url{https://github.com/nucypher/mining-paper}
+
+        \bigskip
+
         Mining reward:
-        \begin{eqnarray}
-            \kappa &=& \left(0.5 + 0.5\frac{\min(T_i, T_1)}{T_1}\right)\\
-            T_{i,\text{initial}} &\ge& T_{\min},\\
-            \delta s_{i,t} &=&  \kappa\, \frac{l_i}{\sum l_j} \frac{\ln{2}}{T_{1/2}} \left( S_{\max} - S_{t-1}\right).\\
-        \end{eqnarray}
+        \begin{align}
+            \kappa &= \left(0.5 + 0.5\frac{\min(T_i, T_1)}{T_1}\right) \nonumber \\
+            T_{i,\text{initial}} &\ge T_{\min} \nonumber \\
+            \delta s_{i,t} &=  \kappa\, \frac{l_i}{\sum l_j} \frac{\ln{2}}{T_{1/2}} \left( S_{\max} - S_{t-1}\right) \nonumber
+        \end{align}
         Results into:
         $$\text{reward} \propto 2^{\frac{t}{T_{1/2}}}$$
     \end{frame}

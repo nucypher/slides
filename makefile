@@ -7,7 +7,7 @@ slides.pdf:	check-vars slides.tex
 		xelatex $(LATEX_OPTIONS) && xelatex $(LATEX_OPTIONS) && rm -f *.aux *.log *.nav *.toc *.out *.snm *.vrb
 
 $(PDF):	pdf/%.pdf: svg/%.svg
-		inkscape "$<" --export-pdf="$@"
+		inkscape "/Users/derek/Documents/Github/repos/slides/$<" --export-pdf="/Users/derek/Documents/Github/repos/slides/$@"
 
 define usage
 	$(info *** Error: $(1) ***)
