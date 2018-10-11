@@ -5,29 +5,16 @@
 * XeLaTeX
 
 ### Generate slides for	a specific event
-```
-Usage: make [TITLE_FOOT=<presentation_title_footer>] PRES_INFO=<presenter_information> PRES_FOOT=<presenter_footer> EMAIL=<email_prefix> EVENT_DATE=<dd MMM yyyy> EVENT=<event>
-where
-	TITLE_FOOT - the footer title of the presentation (optional - default is 'NuCypher')
-	PRES_INFO  - the title slide information about the presenter(s) eg. name(s), role(s)
-	PRES_FOOT  - the text for the presenter footer eg. first name(s)
-	EMAIL      - the email name prefix for the presenter i.e. <email>@nucypher.com
-	EVENT      - the name of the event
-	EVENT_DATE - the date of the event with format: dd MMM yyyy
-```
+Edit the template.tex file accordingly for the specific event.
 
-Example:
+For example:
 ```
-make PRES_INFO="MacLane Wilkison, CEO \& Co-Founder" PRES_FOOT="MacLane" EMAIL="maclane" EVENT_DATE="05 Oct 2018" EVENT="ETH SF"
+\newcommand{\presenter}{MacLane Wilkison, CEO \& Co-Founder}
+\newcommand{\presenterfooter}{MacLane}
+\newcommand{\titlefooter}{NuCypher}
+\newcommand{\emailname}{maclane}
+\newcommand{\event}{Eth SF}
+\newcommand{\eventdate}{05 Oct 2018}
 ```
 
-**NOTE: Special characters should be escaped.**
-
-
-### Generate templated slides for non-event specific branch
-
-Run a templated build for non-event specific slide updates (eg. on master or enterprise branches):
-
-```
-Usage: make BUILD=template
-```
+**NOTE: Some special characters may need to be escaped using '\\'.**
