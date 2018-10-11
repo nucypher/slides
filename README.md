@@ -5,7 +5,9 @@
 * XeLaTeX
 
 ### Generate slides for	a specific event
-Edit the template.tex file accordingly for the specific event.
+
+1. Copy `template.tex.base` to `template.tex` - **do not edit** `template.tex.base`
+2. Edit the template.tex file accordingly for the specific event.
 
 For example:
 ```
@@ -16,5 +18,8 @@ For example:
 \newcommand{\event}{Eth SF}
 \newcommand{\eventdate}{05 Oct 2018}
 ```
+_NOTE: Some special characters may need to be escaped using '\\'._
 
-**NOTE: Some special characters may need to be escaped using '\\'.**
+3. Run `make`
+
+
