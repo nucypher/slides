@@ -1,10 +1,22 @@
 # NuCypher Slides
 
-### Build Requirements
+## Build Requirements
 * Inkscape: <https://inkscape.org>
 * XeLaTeX
 
-### Generate slides for	a specific event
+## Generating Slides for a Specific Event
+
+### Branching
+In order for the event-specific branches to be easily differentiated from the base branches eg. master, enterprise, please follow the following format `_<date>_<event>` i.e.
+1. Start with an underscore
+2. Date: yyyy_mm_dd
+3. Event name
+
+_*each separated with and underscore_
+
+For Example: `_2018_10_05_ETHBerlin`
+
+### Building
 
 1. Copy `template.tex.base` to `template.tex` - **do not edit** `template.tex.base`
 2. Edit the template.tex file accordingly for the specific event.
