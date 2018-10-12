@@ -1,14 +1,18 @@
 \documentclass[xetex,mathsans,sans,aspectratio=169]{beamer}
+\usepackage{listings}
 \usetheme{Boadilla}
 \usecolortheme{orchid}
 \usepackage{fontspec}
 \setsansfont{Basis Grotesque}
 \setbeamertemplate{navigation symbols}{}
+\usepackage{amsmath}
+\usepackage{multicol}
 
+\input{template.tex}
 
-\title[NuCypher]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
-\author[<fname>]{<fname lname>, <title>}
-\date[<dd Mon yyyy>]{<event>, <dd Mon yyyy>}
+\title[\titlefooter]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
+\author[\presenterfooter]{\presenter}
+\date[\eventdate]{\event, \eventdate}
 
 \begin{document}
     \begin{frame}
@@ -62,7 +66,7 @@
 
     \begin{frame}
         \frametitle{Solution}
-        \framesubtitle{Proxy Re-encryption + KMS}
+        \framesubtitle{Proxy Re-encryption + Key Management}
         \begin{figure}
             \centering
             \includegraphics[height=4.5cm]{pdf/pre-kms.pdf}
@@ -114,13 +118,87 @@
     \end{frame}
 
     \begin{frame}
+      \frametitle{Umbral Flow Diagram}
+      \begin{figure}
+        \centering
+        \includegraphics[width=11cm]{pdf/umbral-kem-flow.pdf}
+      \end{figure}
+      \begin{itemize}
+           \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
+           \item Documentation: \url{https://github.com/nucypher/umbral-doc}
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{KMS Network: Data Sharing + PKE}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/permissioned.pdf}
+        \end{figure}
+        \begin{itemize}
+            \item Single node has access to data
+            \item Single node can deny to do work
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{KMS Network: Data Sharing + PKE + Shamir Secret Sharing}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/permissioned-sss.pdf}
+        \end{figure}
+        \begin{itemize}
+            \item Nodes can collude to gain access to data
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{KMS Network: Data Sharing + PRE}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/prenodes.pdf}
+        \end{figure}
+        \begin{itemize}
+            \item Single node collusion with receiver possible
+            \item Single node can deny to do work
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{KMS Network: Data Sharing + Threshold PRE (Umbral)}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/umbralnodes.pdf}
+        \end{figure}
+        \begin{itemize}
+            \item Collusion now requires $m$ nodes + receiver
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
         \frametitle{Decentralized KMS: Token}
         \framesubtitle{Purpose}
         \begin{itemize}
-            \item Splitting trust between re-encryption nodes (more tokens = more trust and more work)
+            \item Splitting trust across re-encryption nodes 
+            \begin{itemize}
+              \item More tokens = more trust, more work, and more compensation
+            \end{itemize}
             \item Proof of Stake for minting new coins according to the mining schedule
-            \item Security deposit to be at stake against malicious behavior of nodes
+            \item Security deposit at stake against malicious behavior of nodes
         \end{itemize}
+    \end{frame}
+
+   \begin{frame}
+        \frametitle{Data Sharing Policies}
+        \begin{itemize}
+            \item Time-based
+            \item Conditional on payment 
+            \begin{itemize}
+              \item ``Grant access once paid, continue granting while paying''
+            \end{itemize}
+            \item Smart contract (public) method
+        \end{itemize}
+        Decentralized re-encryption nodes (Ursulas) relied on to apply conditions without having the ability to decrypt data
     \end{frame}
 
     \begin{frame}
@@ -154,7 +232,7 @@
         \framesubtitle{Encrypted file sharing}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/file-sharing.pdf}
+            \includegraphics[height=7cm]{pdf/file-sharing.pdf}
         \end{figure}
     \end{frame}
 
@@ -163,13 +241,13 @@
         \framesubtitle{Encrypted multi-user chats}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/chats.pdf}
+            \includegraphics[height=7cm]{pdf/chats.pdf}
         \end{figure}
     \end{frame}
 
     \begin{frame}
         \frametitle{Use Cases}
-        \framesubtitle{Decentralized Access-Controlled Content}
+        \framesubtitle{Decentralized access-controlled content}
         \begin{figure}
             \centering
             \includegraphics[height=5.5cm]{pdf/content.pdf}
@@ -191,36 +269,56 @@
            \item Reduce the value of data by obfuscating it
        \end{itemize}
 
+       Public Key Encryption
+       \begin{itemize}
+           \item Data must be decrypted before it is shared
+           \item Not Scalable
+       \end{itemize}
+
        Multi-Party Computation
        \begin{itemize}
-           \item Early Research Stage
+           \item Interactive protocol
            \item Slow Performance
        \end{itemize}
-      
+
        Fully Homomorphic Encryption
        \begin{itemize}
-           \item Early Research Stage
            \item Slow Peformance
            \begin{itemize}
-               \item \emph{NuCypher has invested efforts in this area}
+               \item NuCypher has developed a GPU-accelerated FHE library: nuFHE
            \end{itemize}
        \end{itemize}
      \end{frame}
 
     \begin{frame}
       \frametitle{Fully Homomorphic Encryption}
-       \framesubtitle{nuFHE Library}
+       \framesubtitle{nuFHE library}
        \begin{itemize}
+           \item GitHub: \url{https://github.com/nucypher/nufhe}
            \item GPU implementation of fully homomorphic encryption
            \item Uses either FFT or integer NTT
-           \item GitHub: \url{https://github.com/nucypher/nufhe}
            \item Achieved 100x performance over TFHE benchmarks
            \begin{figure}
                \includegraphics[width=10.5cm]{pdf/nufhe-benchmarks.pdf}
            \end{figure}
        \end{itemize}
      \end{frame}
-    
+
+    \begin{frame}
+      \frametitle{FHE Proof of Concept}
+      \framesubtitle{Sputnik}
+      \begin{itemize}
+        \item GitHub: \url{https://github.com/nucypher/sputnik}
+        \item Assembly language and interpreter for FHE that uses nuFHE
+        \item Commits a merkle root of computation to the blockchain for proof of logic flow
+        \item Used to execute first homomorphic smart contract at ETHBerlin 2018
+      \end{itemize}
+      \begin{figure}
+        \centering
+        \includegraphics[width=8cm]{pdf/sputnik-tweet.pdf}
+      \end{figure}
+    \end{frame}
+
     \begin{frame}
       \frametitle{Investors}
         \framesubtitle{>\$15M in Venture Funding}
@@ -242,37 +340,42 @@
         \frametitle{More Information}
         \begin{figure}
             \centering
-            \includegraphics[width=5cm]{pdf/nucypher_logo.pdf}
+            \includegraphics[width=3cm]{pdf/nucypher_logo.pdf}
         \end{figure}
-        Website: \url{https://nucypher.com}
+        Website: \url{https://www.nucypher.com}
 
         Whitepaper: \url{https://www.nucypher.com/whitepapers/english.pdf}
 
-        Github: \url{https://github.com/nucypher}
+        Proxy Re-encryption Network: \url{https://github.com/nucypher/nucypher}
+
+        Umbral Reference Implementation: \url{https://github.com/nucypher/pyUmbral}
+
+        nuFHE: \url{https://github.com/nucypher/nufhe}
 
         Discord: \url{https://discord.gg/7rmXa3S}
 
-        Email: \href{mailto:<fname>@nucypher.com}{<fname>@nucypher.com}
+        E-mail: \href{mailto:\emailname @nucypher.com}{\emailname @nucypher.com}
 
-        Email: \href{mailto:hello@nucypher.com}{hello@nucypher.com}
+        E-mail: \href{mailto:hello@nucypher.com}{hello@nucypher.com}
     \end{frame}
 
     \begin{frame}
-      \frametitle{Appendix: Umbral - Threshold Proxy Re-Encryption}
-      Designed by: David Nu\~{n}ez, University of Malaga, NICS Lab
-      \begin{itemize}
-          \item \emph{``Umbral''} is Spanish for \emph{``threshold''}
-          \item PRE properties: Unidirectional, single-hop, non-interactive
-          \item It follows a KEM/DEM approach:
-          \begin{itemize}
-              \item UmbralKEM provides the threshold re-encryption capability
-              \item The DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
-          \end{itemize}
-          \item IND-PRE-CCA security
-          \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
-          \item Code: \url{https://github.com/nucypher/pyUmbral/}
-          \item Documentation (WIP): \url{https://github.com/nucypher/umbral-doc}
-      \end{itemize}
+        \frametitle{Appendix: Umbral - Threshold Proxy Re-encryption}
+        \begin{itemize}
+        	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
+            \item PRE properties: Unidirectional, single-hop, non-interactive
+            \item Follows a KEM/DEM approach:
+            	\begin{itemize}
+		    \item UmbralKEM provides the threshold re-encryption capability
+                    \item Uses ECIES for key encapsulation with ZK proofs of correctness for verifiability on prime order curves (such as secp256k1)
+            	    \item DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
+        	\end{itemize}
+	    \item IND-PRE-CCA security
+            \item Key splitting is analogous to Shamir Secret Sharing
+	    \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
+            \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
+	    \item Documentation: \url{https://github.com/nucypher/umbral-doc}
+        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -290,6 +393,7 @@
         \includegraphics[height=5cm]{pdf/fhe.pdf}
       \end{figure}
     \end{frame}
+
 \end{document}
 
 
