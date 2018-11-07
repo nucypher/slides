@@ -20,6 +20,25 @@
     \end{frame}
 
     \begin{frame}
+      \frametitle{NuCypher Overview}
+        \begin{itemize}
+            \item Use cryptography to build the tools \& infrastructure to preserve data privacy
+            \item Privacy-preserving solutions for distributed applications
+              \begin{itemize}
+                  \item Proxy Re-encryption (PRE)
+                  \begin{itemize}
+                    \item Secure data-sharing and access control of encrypted data
+                  \end{itemize}
+                  \item Fully Homomorphic Encryption (FHE)
+                  \begin{itemize}
+                    \item Perform arbitrary operations on encrypted data
+                  \end{itemize}
+              \end{itemize}
+            \item Blockchain \& Private Deployments
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
         \frametitle{Public Key Encryption (PKE)}
         \begin{figure}
             \centering
@@ -79,25 +98,6 @@
             \centering
             \includegraphics[height=6.5cm]{pdf/decrypt-umbral.pdf}
         \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Umbral: Threshold Proxy Re-encryption}
-        \begin{itemize}
-        	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
-            \item PRE properties: Unidirectional, single-hop, non-interactive
-            \item Follows a KEM/DEM approach:
-            	\begin{itemize}
-		    \item UmbralKEM provides the threshold re-encryption capability
-                    \item Uses ECIES for key encapsulation with ZK proofs of correctness for verifiability on prime order curves (such as secp256k1)
-            	    \item DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
-        	\end{itemize}
-	    \item IND-PRE-CCA security
-            \item Key splitting is analogous to Shamir Secret Sharing
-	    \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
-            \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
-	    \item Documentation: \url{https://github.com/nucypher/umbral-doc}
-        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -170,14 +170,6 @@
             \item Smart contract (public) method
         \end{itemize}
         Decentralized re-encryption nodes (Ursulas) relied on to apply conditions without having the ability to decrypt data
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Demo}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
-        \end{figure}
     \end{frame}
 
     \begin{frame}
@@ -273,6 +265,14 @@
     \end{frame}
 
     \begin{frame}
+      \frametitle{Appendix: Team}
+        \begin{figure}
+            \centering
+            \includegraphics[width=15cm]{pdf/company.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
         \frametitle{More Information}
         \begin{figure}
             \centering
@@ -294,6 +294,26 @@
 
         E-mail: \href{mailto:hello@nucypher.com}{hello@nucypher.com}
     \end{frame}
+
+    \begin{frame}
+        \frametitle{Appendix: Umbral - Threshold Proxy Re-encryption}
+        \begin{itemize}
+        	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
+            \item PRE properties: Unidirectional, single-hop, non-interactive
+            \item Follows a KEM/DEM approach:
+            	\begin{itemize}
+		    \item UmbralKEM provides the threshold re-encryption capability
+                    \item Uses ECIES for key encapsulation with ZK proofs of correctness for verifiability on prime order curves (such as secp256k1)
+            	    \item DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
+        	\end{itemize}
+	    \item IND-PRE-CCA security
+            \item Key splitting is analogous to Shamir Secret Sharing
+	    \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
+            \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
+	    \item Documentation: \url{https://github.com/nucypher/umbral-doc}
+        \end{itemize}
+    \end{frame}
+
 
     \begin{frame}
       \frametitle{Appendix: Umbral Flow Diagram}
@@ -347,14 +367,6 @@
         \begin{figure}
             \centering
             \includegraphics[height=5.5cm]{pdf/total-compensation.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Appendix: Team}
-        \begin{figure}
-            \centering
-            \includegraphics[width=15cm]{pdf/company.pdf}
         \end{figure}
     \end{frame}
 
