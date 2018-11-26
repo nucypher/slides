@@ -10,14 +10,17 @@
 
 \input{template.tex}
 
-\title[\titlefooter]{\includegraphics[width=5.5cm]{pdf/nucypher_logo.pdf}}
-\author[\presenterfooter]{\presenter}
-\date[\eventdate]{\event, \eventdate}
+\title[\titlefooter]{}
+\author[\presenterfooter]{}
+\date[\eventdate]{}
 
 \begin{document}
-    \begin{frame}
-        \titlepage
-    \end{frame}
+    {
+        \usebackgroundtemplate{\includegraphics[width=\paperwidth]{pdf/cryptocamp_title_page.pdf}}
+        \begin{frame}
+            \titlepage
+        \end{frame}
+    }
 
     \begin{frame}
       \frametitle{NuCypher Overview}
@@ -47,16 +50,6 @@
         \end{figure}
 
         {\tiny Source: \url{https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/} \par}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Impact of Data Breaches}
-        \begin{figure}
-            \centering
-            \includegraphics[height=6.5cm]{pdf/impact-of-data-breaches.pdf}
-        \end{figure}
-
-        {\tiny Source: IBM 2018 Cost of a Data Breach Study: Global Overview, \url{https://www.ibm.com/security/data-breach} \par}
     \end{frame}
 
     \begin{frame}
@@ -143,55 +136,9 @@
         \includegraphics[width=11cm]{pdf/umbral-kem-flow.pdf}
       \end{figure}
       \begin{itemize}
-           \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
            \item Documentation: \url{https://github.com/nucypher/umbral-doc}
+           \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
       \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{KMS Network: Data Sharing + PKE}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/permissioned.pdf}
-        \end{figure}
-        \begin{itemize}
-            \item Single node has access to data
-            \item Single node can deny to do work
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{KMS Network: Data Sharing + PKE + Shamir Secret Sharing}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/permissioned-sss.pdf}
-        \end{figure}
-        \begin{itemize}
-            \item Nodes can collude to gain access to data
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{KMS Network: Data Sharing + PRE}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/prenodes.pdf}
-        \end{figure}
-        \begin{itemize}
-            \item Single node collusion with receiver possible
-            \item Single node can deny to do work
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{KMS Network: Data Sharing + Threshold PRE (Umbral)}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/umbralnodes.pdf}
-        \end{figure}
-        \begin{itemize}
-            \item Collusion now requires $m$ nodes + receiver
-        \end{itemize}
     \end{frame}
 
     \begin{frame}
@@ -230,19 +177,10 @@
 
     \begin{frame}
         \frametitle{Use Cases}
-        \framesubtitle{Multi-tenant, Multi-source Encrypted Data Lake}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/data-lake.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Use Cases}
         \framesubtitle{Scalable, Secure IOT Updates}
         \begin{figure}
             \centering
-            \includegraphics[height=7cm]{pdf/iot-updates.pdf}
+            \includegraphics[height=7cm]{pdf/iot-updates-alternative.pdf}
         \end{figure}
     \end{frame}
 
@@ -251,7 +189,7 @@
         \framesubtitle{Encrypted file sharing}
         \begin{figure}
             \centering
-            \includegraphics[height=7cm]{pdf/file-sharing.pdf}
+            \includegraphics[height=7cm]{pdf/file-sharing-alternative.pdf}
         \end{figure}
     \end{frame}
 
@@ -260,7 +198,7 @@
         \framesubtitle{Encrypted multi-user chats}
         \begin{figure}
             \centering
-            \includegraphics[height=7cm]{pdf/chats.pdf}
+            \includegraphics[height=7cm]{pdf/chats-alternative.pdf}
         \end{figure}
     \end{frame}
 
@@ -269,7 +207,7 @@
         \framesubtitle{Decentralized access-controlled content}
         \begin{figure}
             \centering
-            \includegraphics[height=5.5cm]{pdf/content.pdf}
+            \includegraphics[height=7cm]{pdf/streams-alternative.pdf}
         \end{figure}
     \end{frame}
 
@@ -281,33 +219,16 @@
     \end{frame}
 
     \begin{frame}
-      \frametitle{Competing Technology}
-       Data Masking and Tokenization
-       \begin{itemize}
-           \item Less secure for data with underlying patterns
-           \item Reduce the value of data by obfuscating it
-       \end{itemize}
-
-       Public Key Encryption
-       \begin{itemize}
-           \item Data must be decrypted before it is shared
-           \item Not Scalable
-       \end{itemize}
-
-       Multi-Party Computation
-       \begin{itemize}
-           \item Interactive protocol
-           \item Slow Performance
-       \end{itemize}
-
-       Fully Homomorphic Encryption
-       \begin{itemize}
-           \item Slow Peformance
-           \begin{itemize}
-               \item NuCypher has developed a GPU-accelerated FHE library: nuFHE
-           \end{itemize}
-       \end{itemize}
-     \end{frame}
+        \frametitle{Umbral PRE Demo}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.5cm]{pdf/terminal.pdf}
+        \end{figure}
+        \begin{itemize}
+           \item Documentation: \url{https://github.com/nucypher/umbral-doc}
+           \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
+        \end{itemize}
+    \end{frame}
 
     \begin{frame}
       \frametitle{Fully Homomorphic Encryption}
@@ -322,38 +243,6 @@
            \end{figure}
        \end{itemize}
      \end{frame}
-
-    \begin{frame}
-      \frametitle{FHE Proof of Concept}
-      \framesubtitle{Sputnik}
-      \begin{itemize}
-        \item GitHub: \url{https://github.com/nucypher/sputnik}
-        \item Assembly language and interpreter for FHE that uses nuFHE
-        \item Commits a merkle root of computation to the blockchain for proof of logic flow
-        \item Used to execute first homomorphic smart contract at ETHBerlin 2018
-      \end{itemize}
-      \begin{figure}
-        \centering
-        \includegraphics[width=8cm]{pdf/sputnik-tweet.pdf}
-      \end{figure}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Investors}
-        \framesubtitle{>\$15M in Venture Funding}
-        \begin{figure}
-            \centering
-            \includegraphics[height=6.5cm]{pdf/investors.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Team}
-        \begin{figure}
-            \centering
-            \includegraphics[width=15cm]{pdf/company.pdf}
-        \end{figure}
-    \end{frame}
 
     \begin{frame}
         \frametitle{More Information}
@@ -398,12 +287,33 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Appendix: Security Audits}
-        \begin{figure}
-            \centering
-            \includegraphics[height=2.5cm]{pdf/security-audits.pdf}
-      \end{figure}
-    \end{frame}
+      \frametitle{Appendix: Competing Technology}
+       Data Masking and Tokenization
+       \begin{itemize}
+           \item Less secure for data with underlying patterns
+           \item Reduce the value of data by obfuscating it
+       \end{itemize}
+
+       Public Key Encryption
+       \begin{itemize}
+           \item Data must be decrypted before it is shared
+           \item Not Scalable
+       \end{itemize}
+
+       Multi-Party Computation
+       \begin{itemize}
+           \item Interactive protocol
+           \item Slow Performance
+       \end{itemize}
+
+       Fully Homomorphic Encryption
+       \begin{itemize}
+           \item Slow Peformance
+           \begin{itemize}
+               \item NuCypher has developed a GPU-accelerated FHE library: nuFHE
+           \end{itemize}
+       \end{itemize}
+     \end{frame}
 
     \begin{frame}
       \frametitle{Appendix: Fully Homomorphic Encryption}
@@ -411,6 +321,29 @@
         \centering
         \includegraphics[height=5cm]{pdf/fhe.pdf}
       \end{figure}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{Appendix: FHE Proof of Concept}
+      \framesubtitle{Sputnik}
+      \begin{itemize}
+        \item GitHub: \url{https://github.com/nucypher/sputnik}
+        \item Assembly language and interpreter for FHE that uses nuFHE
+        \item Commits a merkle root of computation to the blockchain for proof of logic flow
+        \item Used to execute first homomorphic smart contract at ETHBerlin 2018
+      \end{itemize}
+      \begin{figure}
+        \centering
+        \includegraphics[width=8cm]{pdf/sputnik-tweet.pdf}
+      \end{figure}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{Appendix: Team}
+        \begin{figure}
+            \centering
+            \includegraphics[width=15cm]{pdf/company.pdf}
+        \end{figure}
     \end{frame}
 
 \end{document}
