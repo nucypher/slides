@@ -45,8 +45,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.484375"
-     inkscape:cx="1026.795"
-     inkscape:cy="251.1899"
+     inkscape:cx="768.73048"
+     inkscape:cy="416.35119"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -634,5 +634,17 @@
            points="22,0 22,40 42,20 " />
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1153.9138"
+       y="814.27002"
+       id="text4066"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4068"
+         x="1153.9138"
+         y="814.27002"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55px;font-family:BasisGrotesquePro-Regular, 'Basis Grotesque Pro';-inkscape-font-specification:'BasisGrotesquePro-Regular, Basis Grotesque Pro'">Storage</tspan></text>
   </g>
 </svg>
