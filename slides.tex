@@ -7,6 +7,7 @@
 \setbeamertemplate{navigation symbols}{}
 \usepackage{amsmath}
 \usepackage{multicol}
+\usepackage{hyperref}
 
 \input{template.tex}
 
@@ -34,6 +35,7 @@
             \centering
             \includegraphics[width=13cm]{pdf/pre-multi.pdf}
         \end{figure}
+        \href{run:videos/pre-explainer.mp4}{Proxy re-encryption video}
     \end{frame}
 
     \begin{frame}
@@ -101,56 +103,10 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{KMS Network: Data Sharing + PKE}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/permissioned.pdf}
-        \end{figure}
-        \begin{itemize}
-            \item Single node has access to data
-            \item Single node can deny to do work
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{KMS Network: Data Sharing + PKE + Shamir Secret Sharing}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/permissioned-sss.pdf}
-        \end{figure}
-        \begin{itemize}
-            \item Nodes can collude to gain access to data
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{KMS Network: Data Sharing + PRE}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/prenodes.pdf}
-        \end{figure}
-        \begin{itemize}
-            \item Single node collusion with receiver possible
-            \item Single node can deny to do work
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{KMS Network: Data Sharing + Threshold PRE (Umbral)}
-        \begin{figure}
-            \centering
-            \includegraphics[height=5.5cm]{pdf/umbralnodes.pdf}
-        \end{figure}
-        \begin{itemize}
-            \item Collusion now requires $m$ nodes + receiver
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
         \frametitle{NU Token}
         \framesubtitle{Purpose}
         \begin{itemize}
-            \item Splitting trust across re-encryption nodes 
+            \item Splitting trust across re-encryption nodes
             \begin{itemize}
               \item More tokens = more trust, more work, and more compensation
             \end{itemize}
@@ -159,52 +115,13 @@
         \end{itemize}
     \end{frame}
 
-   \begin{frame}
-        \frametitle{Data Sharing Policies}
-        \begin{itemize}
-            \item Time-based
-            \item Conditional on payment 
-            \begin{itemize}
-              \item ``Grant access once paid, continue granting while paying''
-            \end{itemize}
-            \item Smart contract (public) method
-        \end{itemize}
-        Decentralized re-encryption nodes (Ursulas) relied on to apply conditions without having the ability to decrypt data
-    \end{frame}
-
     \begin{frame}
-        \frametitle{Demo}
+        \frametitle{Testnet is up!}
         \begin{figure}
             \centering
             \includegraphics[height=5.5cm]{pdf/terminal.pdf}
         \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Use Cases}
-        \framesubtitle{Encrypted file sharing}
-        \begin{figure}
-            \centering
-            \includegraphics[height=7cm]{pdf/file-sharing-alternative.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Use Cases}
-        \framesubtitle{Encrypted multi-user chats}
-        \begin{figure}
-            \centering
-            \includegraphics[height=7cm]{pdf/chats-alternative.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
-        \frametitle{Use Cases}
-        \framesubtitle{Decentralized access-controlled content}
-        \begin{figure}
-            \centering
-            \includegraphics[height=7cm]{pdf/streams-alternative.pdf}
-        \end{figure}
+        \href{run:videos/nucypher-node.mp4}{Video of testnet node running}
     \end{frame}
 
     \begin{frame}
@@ -256,21 +173,6 @@
            \end{figure}
        \end{itemize}
      \end{frame}
-
-    \begin{frame}
-      \frametitle{FHE Proof of Concept}
-      \framesubtitle{Sputnik}
-      \begin{itemize}
-        \item GitHub: \url{https://github.com/nucypher/sputnik}
-        \item Assembly language and interpreter for FHE that uses nuFHE
-        \item Commits a merkle root of computation to the blockchain for proof of logic flow
-        \item Used to execute first homomorphic smart contract at ETHBerlin 2018
-      \end{itemize}
-      \begin{figure}
-        \centering
-        \includegraphics[width=8cm]{pdf/sputnik-tweet.pdf}
-      \end{figure}
-    \end{frame}
 
     \begin{frame}
         \frametitle{More Information}
