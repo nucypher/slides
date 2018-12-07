@@ -115,6 +115,21 @@
         \end{itemize}
     \end{frame}
 
+    \begin{frame}[fragile]
+        \frametitle{Where to start}
+        \begin{verbatim}
+virtualenv _venv -p python3
+source _venv/bin/activate
+pip3 install pip3 install git+https://github.com/nucypher/nucypher.git@federated
+
+git clone https://github.com/nucypher/nucypher.git
+cd nucypher
+git checkout federated
+cd examples/finnegans_wake_demo
+python3 finnegans-wake-concise-demo.py
+        \end{verbatim}
+    \end{frame}
+
     \begin{frame}
         \frametitle{Heartbeat demo with testnet}
         \begin{figure}
