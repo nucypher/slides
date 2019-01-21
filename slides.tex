@@ -22,6 +22,7 @@
     \begin{frame}
       \frametitle{NuCypher Overview}
         \begin{itemize}
+          \setlength\itemsep{1em}
             \item Use cryptography to build the tools \& infrastructure to preserve data privacy
             \item Privacy-preserving solutions for distributed applications
               \begin{itemize}
@@ -46,7 +47,6 @@
             \includegraphics<2>[width=11cm]{pdf/pke-multi-hack.pdf}
         \end{figure}
 
-        Limitations
         \begin{itemize}
             \item<2> Decryption required before sharing
             \item<2> Not scalable
@@ -161,6 +161,13 @@
     \end{frame}
 
     \begin{frame}
+      \frametitle{Early Users}
+      \begin{figure}
+           \includegraphics[width=11.5cm]{pdf/projects.pdf}
+      \end{figure}
+    \end{frame}
+
+    \begin{frame}
       \frametitle{MOBI Grand Challenge}
       \framesubtitle{OBDX - Vehicle Onboard Diagnostics (OBD) Data Exchange}
       \begin{itemize}
@@ -175,22 +182,64 @@
     \end{frame}
 
     \begin{frame}
-      \frametitle{Demo}
+      \frametitle{RFI Open Questions}
+      \framesubtitle{Vehicle Identity}
+      \begin{itemize}
+        \setlength\itemsep{1em}
+        \item Vehicle ID record signed by OEM for data integrity
+        \item OEM provides public key for verification
+        \item Excludes ownership information
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{RFI Open Questions}
+      \framesubtitle{Vehicle Ownership}
+      \begin{itemize}
+        \setlength\itemsep{1em}
+        \item Owner issues policy public key to encrypt vehicle data eg. OBD-II
+        \item Only owner has access to policy private key i.e. owner controls data
+        \item Owner grants access to data by entities using NuCypher PRE
+        \item Change of ownership
+          \begin{itemize}
+            \item New owner issues new policy public key to vehicle
+            \item Change of ownership record signed by previous owner
+          \end{itemize}
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{RFI Open Questions}
+      \framesubtitle{Data Integrity}
+      \begin{itemize}
+        \setlength\itemsep{1em}
+        \item Vehicle issued signing key pair at manufacture
+        \item Physical vehicle linked to digital identity by signing key pair
+        \item Vehicle signing key different from data encryption key
+        \begin{itemize}
+          \item Signing key pair used to verify data obtained from vehicle
+        \end{itemize}
+        \item Repair/maintenance provider adds cryptographic signature to service record
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{RFI Open Questions}
+      \framesubtitle{Data Exchange}
+      \begin{itemize}
+        \setlength\itemsep{0.7em}
+        \item Vehicle owner uses NuCypher to grant/revoke access to vehicle's data
+        \item Predictive Maintenance and Repair Service
+        \begin{itemize}
+          \item Vehicle owner uses NuCypher to grant access to vehicle's data
+          \item AI models used on shared car data eg. OBD-II
+          \item Fully Homomorphic Encryption could be utilized for increased privacy
+        \end{itemize}
+        \item Other Examples: Insurance Companies, Dealerships, Gov't Entity (eg. DMV), R\&D
+      \end{itemize}
       \begin{figure}
         \centering
-        \includegraphics[height=5.5cm]{pdf/terminal.pdf}
-      \end{figure}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Open Questions}
-      \framesubtitle{Proposed Vehicle Identity}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Early Users}
-      \begin{figure}
-           \includegraphics[width=11.5cm]{pdf/projects.pdf}
+        \includegraphics[height=3.7cm]{pdf/car-data-sharing-alternative.pdf}
       \end{figure}
     \end{frame}
 
@@ -236,19 +285,19 @@
     \end{frame}
 
     \begin{frame}
-      \frametitle{Appendix: Team}
-        \begin{figure}
-            \centering
-            \includegraphics[width=15cm]{pdf/company.pdf}
-        \end{figure}
-    \end{frame}
-
-    \begin{frame}
       \frametitle{Appendix: Investors}
         \framesubtitle{>\$15M in Venture Funding}
         \begin{figure}
             \centering
             \includegraphics[height=6.5cm]{pdf/investors.pdf}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+      \frametitle{Appendix: Team}
+        \begin{figure}
+            \centering
+            \includegraphics[width=15cm]{pdf/company.pdf}
         \end{figure}
     \end{frame}
 
