@@ -116,25 +116,6 @@
     \end{frame}
 
     \begin{frame}
-        \frametitle{Umbral: Threshold Proxy Re-encryption}
-        \begin{itemize}
-        	\item \emph{``Umbral''} is Spanish for \emph{``threshold''}
-            \item PRE properties: Unidirectional, single-hop, non-interactive
-            \item Follows a KEM/DEM approach:
-            	\begin{itemize}
-		    \item UmbralKEM provides the threshold re-encryption capability
-                    \item Uses ECIES for key encapsulation with ZK proofs of correctness for verifiability on prime order curves (such as secp256k1)
-            	    \item DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
-        	\end{itemize}
-	    \item IND-PRE-CCA security
-            \item Key splitting is analogous to Shamir Secret Sharing
-	    \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
-            \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
-	    \item Documentation: \url{https://github.com/nucypher/umbral-doc}
-        \end{itemize}
-    \end{frame}
-
-    \begin{frame}
         \frametitle{KMS Network: Data Sharing + Threshold PRE (Umbral)}
         \begin{figure}
             \centering
@@ -264,6 +245,25 @@
         E-mail: \href{mailto:hello@nucypher.com}{hello@nucypher.com}
     \end{frame}
 
+    \begin{frame}
+        \frametitle{Appendix: Umbral - Threshold Proxy Re-encryption}
+        \begin{itemize}
+          \item \emph{``Umbral''} is Spanish for \emph{``threshold''}
+          \item PRE properties: Unidirectional, single-hop, non-interactive
+          \item Follows a KEM/DEM approach:
+            \begin{itemize}
+	      \item UmbralKEM provides the threshold re-encryption capability
+              \item Uses ECIES for key encapsulation with ZK proofs of correctness for verifiability on prime order curves (such as secp256k1)
+              \item DEM can be any authenticated encryption (currently ChaCha20-Poly1305)
+            \end{itemize}
+	  \item IND-PRE-CCA security
+          \item Key splitting is analogous to Shamir Secret Sharing
+	  \item Verification of re-encryption correctness through Non-Interactive ZK Proofs
+          \item Reference implementation: \url{https://github.com/nucypher/pyUmbral}
+	  \item Documentation: \url{https://github.com/nucypher/umbral-doc}
+        \end{itemize}
+    \end{frame}
+    
     \begin{frame}
       \frametitle{Appendix: Umbral Flow Diagram}
       \begin{figure}
